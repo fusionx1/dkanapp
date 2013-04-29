@@ -1,0 +1,2017 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dkandevModelStoreContainer" CdmEntityContainer="dkandevEntities">
+    <EntitySetMapping Name="actions">
+      <EntityTypeMapping TypeName="dkandevModel.action">
+        <MappingFragment StoreEntitySet="actions">
+          <ScalarProperty Name="aid" ColumnName="aid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="callback" ColumnName="callback" />
+          <ScalarProperty Name="parameters" ColumnName="parameters" />
+          <ScalarProperty Name="label" ColumnName="label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="authmaps">
+      <EntityTypeMapping TypeName="dkandevModel.authmap">
+        <MappingFragment StoreEntitySet="authmap">
+          <ScalarProperty Name="aid" ColumnName="aid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="authname" ColumnName="authname" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_authname" ColumnName="__unique_authname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="batches">
+      <EntityTypeMapping TypeName="dkandevModel.batch">
+        <MappingFragment StoreEntitySet="batch">
+          <ScalarProperty Name="bid" ColumnName="bid" />
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="batch1" ColumnName="batch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="blocks">
+      <EntityTypeMapping TypeName="dkandevModel.block">
+        <MappingFragment StoreEntitySet="block">
+          <ScalarProperty Name="bid" ColumnName="bid" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="theme" ColumnName="theme" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="custom" ColumnName="custom" />
+          <ScalarProperty Name="visibility" ColumnName="visibility" />
+          <ScalarProperty Name="pages" ColumnName="pages" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="cache" ColumnName="cache" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_tmd" ColumnName="__unique_tmd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="block_custom">
+      <EntityTypeMapping TypeName="dkandevModel.block_custom">
+        <MappingFragment StoreEntitySet="block_custom">
+          <ScalarProperty Name="bid" ColumnName="bid" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="info" ColumnName="info" />
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_info" ColumnName="__unique_info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="block_node_type">
+      <EntityTypeMapping TypeName="dkandevModel.block_node_type">
+        <MappingFragment StoreEntitySet="block_node_type">
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="block_role">
+      <EntityTypeMapping TypeName="dkandevModel.block_role">
+        <MappingFragment StoreEntitySet="block_role">
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="rid" ColumnName="rid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="blocked_ips">
+      <EntityTypeMapping TypeName="dkandevModel.blocked_ips">
+        <MappingFragment StoreEntitySet="blocked_ips">
+          <ScalarProperty Name="iid" ColumnName="iid" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="boxes">
+      <EntityTypeMapping TypeName="dkandevModel.box">
+        <MappingFragment StoreEntitySet="box">
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="plugin_key" ColumnName="plugin_key" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="options" ColumnName="options" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bueditor_buttons">
+      <EntityTypeMapping TypeName="dkandevModel.bueditor_buttons">
+        <MappingFragment StoreEntitySet="bueditor_buttons">
+          <ScalarProperty Name="bid" ColumnName="bid" />
+          <ScalarProperty Name="eid" ColumnName="eid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="accesskey" ColumnName="accesskey" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bueditor_editors">
+      <EntityTypeMapping TypeName="dkandevModel.bueditor_editors">
+        <MappingFragment StoreEntitySet="bueditor_editors">
+          <ScalarProperty Name="eid" ColumnName="eid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pages" ColumnName="pages" />
+          <ScalarProperty Name="excludes" ColumnName="excludes" />
+          <ScalarProperty Name="iconpath" ColumnName="iconpath" />
+          <ScalarProperty Name="librarypath" ColumnName="librarypath" />
+          <ScalarProperty Name="spriteon" ColumnName="spriteon" />
+          <ScalarProperty Name="spritename" ColumnName="spritename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="caches">
+      <EntityTypeMapping TypeName="dkandevModel.cache">
+        <MappingFragment StoreEntitySet="cache">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_admin_menu">
+      <EntityTypeMapping TypeName="dkandevModel.cache_admin_menu">
+        <MappingFragment StoreEntitySet="cache_admin_menu">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_block">
+      <EntityTypeMapping TypeName="dkandevModel.cache_block">
+        <MappingFragment StoreEntitySet="cache_block">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_bootstrap">
+      <EntityTypeMapping TypeName="dkandevModel.cache_bootstrap">
+        <MappingFragment StoreEntitySet="cache_bootstrap">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_entity_og_membership">
+      <EntityTypeMapping TypeName="dkandevModel.cache_entity_og_membership">
+        <MappingFragment StoreEntitySet="cache_entity_og_membership">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_entity_og_membership_type">
+      <EntityTypeMapping TypeName="dkandevModel.cache_entity_og_membership_type">
+        <MappingFragment StoreEntitySet="cache_entity_og_membership_type">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_field">
+      <EntityTypeMapping TypeName="dkandevModel.cache_field">
+        <MappingFragment StoreEntitySet="cache_field">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_filter">
+      <EntityTypeMapping TypeName="dkandevModel.cache_filter">
+        <MappingFragment StoreEntitySet="cache_filter">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_form">
+      <EntityTypeMapping TypeName="dkandevModel.cache_form">
+        <MappingFragment StoreEntitySet="cache_form">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_gravatar">
+      <EntityTypeMapping TypeName="dkandevModel.cache_gravatar">
+        <MappingFragment StoreEntitySet="cache_gravatar">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_image">
+      <EntityTypeMapping TypeName="dkandevModel.cache_image">
+        <MappingFragment StoreEntitySet="cache_image">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_libraries">
+      <EntityTypeMapping TypeName="dkandevModel.cache_libraries">
+        <MappingFragment StoreEntitySet="cache_libraries">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_menu">
+      <EntityTypeMapping TypeName="dkandevModel.cache_menu">
+        <MappingFragment StoreEntitySet="cache_menu">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_page">
+      <EntityTypeMapping TypeName="dkandevModel.cache_page">
+        <MappingFragment StoreEntitySet="cache_page">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_path">
+      <EntityTypeMapping TypeName="dkandevModel.cache_path">
+        <MappingFragment StoreEntitySet="cache_path">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_rules">
+      <EntityTypeMapping TypeName="dkandevModel.cache_rules">
+        <MappingFragment StoreEntitySet="cache_rules">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_token">
+      <EntityTypeMapping TypeName="dkandevModel.cache_token">
+        <MappingFragment StoreEntitySet="cache_token">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_update">
+      <EntityTypeMapping TypeName="dkandevModel.cache_update">
+        <MappingFragment StoreEntitySet="cache_update">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_views">
+      <EntityTypeMapping TypeName="dkandevModel.cache_views">
+        <MappingFragment StoreEntitySet="cache_views">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cache_views_data">
+      <EntityTypeMapping TypeName="dkandevModel.cache_views_data">
+        <MappingFragment StoreEntitySet="cache_views_data">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="serialized" ColumnName="serialized" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contexts">
+      <EntityTypeMapping TypeName="dkandevModel.context">
+        <MappingFragment StoreEntitySet="context">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+          <ScalarProperty Name="conditions" ColumnName="conditions" />
+          <ScalarProperty Name="reactions" ColumnName="reactions" />
+          <ScalarProperty Name="condition_mode" ColumnName="condition_mode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctools_css_cache">
+      <EntityTypeMapping TypeName="dkandevModel.ctools_css_cache">
+        <MappingFragment StoreEntitySet="ctools_css_cache">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="css" ColumnName="css" />
+          <ScalarProperty Name="filter" ColumnName="filter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ctools_object_cache">
+      <EntityTypeMapping TypeName="dkandevModel.ctools_object_cache">
+        <MappingFragment StoreEntitySet="ctools_object_cache">
+          <ScalarProperty Name="sid" ColumnName="sid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="obj" ColumnName="obj" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+          <ScalarProperty Name="data" ColumnName="data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="data_tables">
+      <EntityTypeMapping TypeName="dkandevModel.data_tables">
+        <MappingFragment StoreEntitySet="data_tables">
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="table_schema" ColumnName="table_schema" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="date_format_locale">
+      <EntityTypeMapping TypeName="dkandevModel.date_format_locale">
+        <MappingFragment StoreEntitySet="date_format_locale">
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="language" ColumnName="language" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="date_format_type">
+      <EntityTypeMapping TypeName="dkandevModel.date_format_type">
+        <MappingFragment StoreEntitySet="date_format_type">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="date_formats">
+      <EntityTypeMapping TypeName="dkandevModel.date_formats">
+        <MappingFragment StoreEntitySet="date_formats">
+          <ScalarProperty Name="dfid" ColumnName="dfid" />
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_formats" ColumnName="__unique_formats" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="defaultcontents">
+      <EntityTypeMapping TypeName="dkandevModel.defaultcontent">
+        <MappingFragment StoreEntitySet="defaultcontent">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="nid" ColumnName="nid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="deltas">
+      <EntityTypeMapping TypeName="dkandevModel.delta">
+        <MappingFragment StoreEntitySet="delta">
+          <ScalarProperty Name="machine_name" ColumnName="machine_name" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="theme" ColumnName="theme" />
+          <ScalarProperty Name="mode" ColumnName="mode" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="settings" ColumnName="settings" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facetapis">
+      <EntityTypeMapping TypeName="dkandevModel.facetapi">
+        <MappingFragment StoreEntitySet="facetapi">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="searcher" ColumnName="searcher" />
+          <ScalarProperty Name="realm" ColumnName="realm" />
+          <ScalarProperty Name="facet" ColumnName="facet" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="settings" ColumnName="settings" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feeds_importer">
+      <EntityTypeMapping TypeName="dkandevModel.feeds_importer">
+        <MappingFragment StoreEntitySet="feeds_importer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="config" ColumnName="config" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feeds_item">
+      <EntityTypeMapping TypeName="dkandevModel.feeds_item">
+        <MappingFragment StoreEntitySet="feeds_item">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="feed_nid" ColumnName="feed_nid" />
+          <ScalarProperty Name="imported" ColumnName="imported" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="guid" ColumnName="guid" />
+          <ScalarProperty Name="hash" ColumnName="hash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feeds_log">
+      <EntityTypeMapping TypeName="dkandevModel.feeds_log">
+        <MappingFragment StoreEntitySet="feeds_log">
+          <ScalarProperty Name="flid" ColumnName="flid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="feed_nid" ColumnName="feed_nid" />
+          <ScalarProperty Name="log_time" ColumnName="log_time" />
+          <ScalarProperty Name="request_time" ColumnName="request_time" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="variables" ColumnName="variables" />
+          <ScalarProperty Name="severity" ColumnName="severity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feeds_push_subscriptions">
+      <EntityTypeMapping TypeName="dkandevModel.feeds_push_subscriptions">
+        <MappingFragment StoreEntitySet="feeds_push_subscriptions">
+          <ScalarProperty Name="domain" ColumnName="domain" />
+          <ScalarProperty Name="subscriber_id" ColumnName="subscriber_id" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="hub" ColumnName="hub" />
+          <ScalarProperty Name="topic" ColumnName="topic" />
+          <ScalarProperty Name="secret" ColumnName="secret" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="post_fields" ColumnName="post_fields" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feeds_source">
+      <EntityTypeMapping TypeName="dkandevModel.feeds_source">
+        <MappingFragment StoreEntitySet="feeds_source">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="feed_nid" ColumnName="feed_nid" />
+          <ScalarProperty Name="config" ColumnName="config" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="fetcher_result" ColumnName="fetcher_result" />
+          <ScalarProperty Name="imported" ColumnName="imported" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_config">
+      <EntityTypeMapping TypeName="dkandevModel.field_config">
+        <MappingFragment StoreEntitySet="field_config">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="field_name" ColumnName="field_name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="storage_type" ColumnName="storage_type" />
+          <ScalarProperty Name="storage_module" ColumnName="storage_module" />
+          <ScalarProperty Name="storage_active" ColumnName="storage_active" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="cardinality" ColumnName="cardinality" />
+          <ScalarProperty Name="translatable" ColumnName="translatable" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_config_instance">
+      <EntityTypeMapping TypeName="dkandevModel.field_config_instance">
+        <MappingFragment StoreEntitySet="field_config_instance">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="field_id" ColumnName="field_id" />
+          <ScalarProperty Name="field_name" ColumnName="field_name" />
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_body">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_body">
+        <MappingFragment StoreEntitySet="field_data_body">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="body_value" ColumnName="body_value" />
+          <ScalarProperty Name="body_summary" ColumnName="body_summary" />
+          <ScalarProperty Name="body_format" ColumnName="body_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_additional_info">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_additional_info">
+        <MappingFragment StoreEntitySet="field_data_field_additional_info">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_additional_info_first" ColumnName="field_additional_info_first" />
+          <ScalarProperty Name="field_additional_info_second" ColumnName="field_additional_info_second" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_author">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_author">
+        <MappingFragment StoreEntitySet="field_data_field_author">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_author_value" ColumnName="field_author_value" />
+          <ScalarProperty Name="field_author_format" ColumnName="field_author_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_data_dictionary">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_data_dictionary">
+        <MappingFragment StoreEntitySet="field_data_field_data_dictionary">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_data_dictionary_value" ColumnName="field_data_dictionary_value" />
+          <ScalarProperty Name="field_data_dictionary_format" ColumnName="field_data_dictionary_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_dataset_ref">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_dataset_ref">
+        <MappingFragment StoreEntitySet="field_data_field_dataset_ref">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_dataset_ref_target_id" ColumnName="field_dataset_ref_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_format">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_format">
+        <MappingFragment StoreEntitySet="field_data_field_format">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_format_tid" ColumnName="field_format_tid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_frequency">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_frequency">
+        <MappingFragment StoreEntitySet="field_data_field_frequency">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_frequency_value" ColumnName="field_frequency_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_granularity">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_granularity">
+        <MappingFragment StoreEntitySet="field_data_field_granularity">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_granularity_value" ColumnName="field_granularity_value" />
+          <ScalarProperty Name="field_granularity_format" ColumnName="field_granularity_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_image">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_image">
+        <MappingFragment StoreEntitySet="field_data_field_image">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_image_fid" ColumnName="field_image_fid" />
+          <ScalarProperty Name="field_image_alt" ColumnName="field_image_alt" />
+          <ScalarProperty Name="field_image_title" ColumnName="field_image_title" />
+          <ScalarProperty Name="field_image_width" ColumnName="field_image_width" />
+          <ScalarProperty Name="field_image_height" ColumnName="field_image_height" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_license">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_license">
+        <MappingFragment StoreEntitySet="field_data_field_license">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_license_value" ColumnName="field_license_value" />
+          <ScalarProperty Name="field_license_format" ColumnName="field_license_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_link_api">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_link_api">
+        <MappingFragment StoreEntitySet="field_data_field_link_api">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_link_api_url" ColumnName="field_link_api_url" />
+          <ScalarProperty Name="field_link_api_title" ColumnName="field_link_api_title" />
+          <ScalarProperty Name="field_link_api_attributes" ColumnName="field_link_api_attributes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_link_file">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_link_file">
+        <MappingFragment StoreEntitySet="field_data_field_link_file">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_link_file_url" ColumnName="field_link_file_url" />
+          <ScalarProperty Name="field_link_file_title" ColumnName="field_link_file_title" />
+          <ScalarProperty Name="field_link_file_attributes" ColumnName="field_link_file_attributes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_resource">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_resource">
+        <MappingFragment StoreEntitySet="field_data_field_resource">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_resource_target_id" ColumnName="field_resource_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_spatial">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_spatial">
+        <MappingFragment StoreEntitySet="field_data_field_spatial">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_spatial_wkt" ColumnName="field_spatial_wkt" />
+          <ScalarProperty Name="field_spatial_geo_type" ColumnName="field_spatial_geo_type" />
+          <ScalarProperty Name="field_spatial_lat" ColumnName="field_spatial_lat" />
+          <ScalarProperty Name="field_spatial_lon" ColumnName="field_spatial_lon" />
+          <ScalarProperty Name="field_spatial_left" ColumnName="field_spatial_left" />
+          <ScalarProperty Name="field_spatial_top" ColumnName="field_spatial_top" />
+          <ScalarProperty Name="field_spatial_right" ColumnName="field_spatial_right" />
+          <ScalarProperty Name="field_spatial_bottom" ColumnName="field_spatial_bottom" />
+          <ScalarProperty Name="field_spatial_srid" ColumnName="field_spatial_srid" />
+          <ScalarProperty Name="field_spatial_accuracy" ColumnName="field_spatial_accuracy" />
+          <ScalarProperty Name="field_spatial_source" ColumnName="field_spatial_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_spatial_geographical_cover">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_spatial_geographical_cover">
+        <MappingFragment StoreEntitySet="field_data_field_spatial_geographical_cover">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_spatial_geographical_cover_value" ColumnName="field_spatial_geographical_cover_value" />
+          <ScalarProperty Name="field_spatial_geographical_cover_format" ColumnName="field_spatial_geographical_cover_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_tags">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_tags">
+        <MappingFragment StoreEntitySet="field_data_field_tags">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_tags_tid" ColumnName="field_tags_tid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_temporal_coverage">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_temporal_coverage">
+        <MappingFragment StoreEntitySet="field_data_field_temporal_coverage">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_temporal_coverage_value" ColumnName="field_temporal_coverage_value" />
+          <ScalarProperty Name="field_temporal_coverage_value2" ColumnName="field_temporal_coverage_value2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_field_upload">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_field_upload">
+        <MappingFragment StoreEntitySet="field_data_field_upload">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_upload_fid" ColumnName="field_upload_fid" />
+          <ScalarProperty Name="field_upload_service_id" ColumnName="field_upload_service_id" />
+          <ScalarProperty Name="field_upload_grid" ColumnName="field_upload_grid" />
+          <ScalarProperty Name="field_upload_graph" ColumnName="field_upload_graph" />
+          <ScalarProperty Name="field_upload_map" ColumnName="field_upload_map" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_group_group">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_group_group">
+        <MappingFragment StoreEntitySet="field_data_group_group">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="group_group_value" ColumnName="group_group_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_og_group_ref">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_og_group_ref">
+        <MappingFragment StoreEntitySet="field_data_og_group_ref">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="og_group_ref_target_id" ColumnName="og_group_ref_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_og_membership_request">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_og_membership_request">
+        <MappingFragment StoreEntitySet="field_data_og_membership_request">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="og_membership_request_value" ColumnName="og_membership_request_value" />
+          <ScalarProperty Name="og_membership_request_format" ColumnName="og_membership_request_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_data_og_user_node">
+      <EntityTypeMapping TypeName="dkandevModel.field_data_og_user_node">
+        <MappingFragment StoreEntitySet="field_data_og_user_node">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="og_user_node_target_id" ColumnName="og_user_node_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_group">
+      <EntityTypeMapping TypeName="dkandevModel.field_group">
+        <MappingFragment StoreEntitySet="field_group">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="identifier" ColumnName="identifier" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="mode" ColumnName="mode" />
+          <ScalarProperty Name="parent_name" ColumnName="parent_name" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_identifier" ColumnName="__unique_identifier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_body">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_body">
+        <MappingFragment StoreEntitySet="field_revision_body">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="body_value" ColumnName="body_value" />
+          <ScalarProperty Name="body_summary" ColumnName="body_summary" />
+          <ScalarProperty Name="body_format" ColumnName="body_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_additional_info">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_additional_info">
+        <MappingFragment StoreEntitySet="field_revision_field_additional_info">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_additional_info_first" ColumnName="field_additional_info_first" />
+          <ScalarProperty Name="field_additional_info_second" ColumnName="field_additional_info_second" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_author">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_author">
+        <MappingFragment StoreEntitySet="field_revision_field_author">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_author_value" ColumnName="field_author_value" />
+          <ScalarProperty Name="field_author_format" ColumnName="field_author_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_data_dictionary">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_data_dictionary">
+        <MappingFragment StoreEntitySet="field_revision_field_data_dictionary">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_data_dictionary_value" ColumnName="field_data_dictionary_value" />
+          <ScalarProperty Name="field_data_dictionary_format" ColumnName="field_data_dictionary_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_dataset_ref">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_dataset_ref">
+        <MappingFragment StoreEntitySet="field_revision_field_dataset_ref">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_dataset_ref_target_id" ColumnName="field_dataset_ref_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_format">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_format">
+        <MappingFragment StoreEntitySet="field_revision_field_format">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_format_tid" ColumnName="field_format_tid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_frequency">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_frequency">
+        <MappingFragment StoreEntitySet="field_revision_field_frequency">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_frequency_value" ColumnName="field_frequency_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_granularity">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_granularity">
+        <MappingFragment StoreEntitySet="field_revision_field_granularity">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_granularity_value" ColumnName="field_granularity_value" />
+          <ScalarProperty Name="field_granularity_format" ColumnName="field_granularity_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_image">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_image">
+        <MappingFragment StoreEntitySet="field_revision_field_image">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_image_fid" ColumnName="field_image_fid" />
+          <ScalarProperty Name="field_image_alt" ColumnName="field_image_alt" />
+          <ScalarProperty Name="field_image_title" ColumnName="field_image_title" />
+          <ScalarProperty Name="field_image_width" ColumnName="field_image_width" />
+          <ScalarProperty Name="field_image_height" ColumnName="field_image_height" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_license">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_license">
+        <MappingFragment StoreEntitySet="field_revision_field_license">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_license_value" ColumnName="field_license_value" />
+          <ScalarProperty Name="field_license_format" ColumnName="field_license_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_link_api">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_link_api">
+        <MappingFragment StoreEntitySet="field_revision_field_link_api">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_link_api_url" ColumnName="field_link_api_url" />
+          <ScalarProperty Name="field_link_api_title" ColumnName="field_link_api_title" />
+          <ScalarProperty Name="field_link_api_attributes" ColumnName="field_link_api_attributes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_link_file">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_link_file">
+        <MappingFragment StoreEntitySet="field_revision_field_link_file">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_link_file_url" ColumnName="field_link_file_url" />
+          <ScalarProperty Name="field_link_file_title" ColumnName="field_link_file_title" />
+          <ScalarProperty Name="field_link_file_attributes" ColumnName="field_link_file_attributes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_resource">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_resource">
+        <MappingFragment StoreEntitySet="field_revision_field_resource">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_resource_target_id" ColumnName="field_resource_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_spatial">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_spatial">
+        <MappingFragment StoreEntitySet="field_revision_field_spatial">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_spatial_wkt" ColumnName="field_spatial_wkt" />
+          <ScalarProperty Name="field_spatial_geo_type" ColumnName="field_spatial_geo_type" />
+          <ScalarProperty Name="field_spatial_lat" ColumnName="field_spatial_lat" />
+          <ScalarProperty Name="field_spatial_lon" ColumnName="field_spatial_lon" />
+          <ScalarProperty Name="field_spatial_left" ColumnName="field_spatial_left" />
+          <ScalarProperty Name="field_spatial_top" ColumnName="field_spatial_top" />
+          <ScalarProperty Name="field_spatial_right" ColumnName="field_spatial_right" />
+          <ScalarProperty Name="field_spatial_bottom" ColumnName="field_spatial_bottom" />
+          <ScalarProperty Name="field_spatial_srid" ColumnName="field_spatial_srid" />
+          <ScalarProperty Name="field_spatial_accuracy" ColumnName="field_spatial_accuracy" />
+          <ScalarProperty Name="field_spatial_source" ColumnName="field_spatial_source" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_spatial_geographical_cover">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_spatial_geographical_cover">
+        <MappingFragment StoreEntitySet="field_revision_field_spatial_geographical_cover">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_spatial_geographical_cover_value" ColumnName="field_spatial_geographical_cover_value" />
+          <ScalarProperty Name="field_spatial_geographical_cover_format" ColumnName="field_spatial_geographical_cover_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_tags">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_tags">
+        <MappingFragment StoreEntitySet="field_revision_field_tags">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_tags_tid" ColumnName="field_tags_tid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_temporal_coverage">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_temporal_coverage">
+        <MappingFragment StoreEntitySet="field_revision_field_temporal_coverage">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_temporal_coverage_value" ColumnName="field_temporal_coverage_value" />
+          <ScalarProperty Name="field_temporal_coverage_value2" ColumnName="field_temporal_coverage_value2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_field_upload">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_field_upload">
+        <MappingFragment StoreEntitySet="field_revision_field_upload">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="field_upload_fid" ColumnName="field_upload_fid" />
+          <ScalarProperty Name="field_upload_service_id" ColumnName="field_upload_service_id" />
+          <ScalarProperty Name="field_upload_grid" ColumnName="field_upload_grid" />
+          <ScalarProperty Name="field_upload_graph" ColumnName="field_upload_graph" />
+          <ScalarProperty Name="field_upload_map" ColumnName="field_upload_map" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_group_group">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_group_group">
+        <MappingFragment StoreEntitySet="field_revision_group_group">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="group_group_value" ColumnName="group_group_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_og_group_ref">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_og_group_ref">
+        <MappingFragment StoreEntitySet="field_revision_og_group_ref">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="og_group_ref_target_id" ColumnName="og_group_ref_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_og_membership_request">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_og_membership_request">
+        <MappingFragment StoreEntitySet="field_revision_og_membership_request">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="og_membership_request_value" ColumnName="og_membership_request_value" />
+          <ScalarProperty Name="og_membership_request_format" ColumnName="og_membership_request_format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="field_revision_og_user_node">
+      <EntityTypeMapping TypeName="dkandevModel.field_revision_og_user_node">
+        <MappingFragment StoreEntitySet="field_revision_og_user_node">
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="entity_id" ColumnName="entity_id" />
+          <ScalarProperty Name="revision_id" ColumnName="revision_id" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="delta" ColumnName="delta" />
+          <ScalarProperty Name="og_user_node_target_id" ColumnName="og_user_node_target_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="file_managed">
+      <EntityTypeMapping TypeName="dkandevModel.file_managed">
+        <MappingFragment StoreEntitySet="file_managed">
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="uri" ColumnName="uri" />
+          <ScalarProperty Name="filemime" ColumnName="filemime" />
+          <ScalarProperty Name="filesize" ColumnName="filesize" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_uri" ColumnName="__unique_uri" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="file_usage">
+      <EntityTypeMapping TypeName="dkandevModel.file_usage">
+        <MappingFragment StoreEntitySet="file_usage">
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="filters">
+      <EntityTypeMapping TypeName="dkandevModel.filter">
+        <MappingFragment StoreEntitySet="filter">
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="settings" ColumnName="settings" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="filter_format">
+      <EntityTypeMapping TypeName="dkandevModel.filter_format">
+        <MappingFragment StoreEntitySet="filter_format">
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cache" ColumnName="cache" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="floods">
+      <EntityTypeMapping TypeName="dkandevModel.flood">
+        <MappingFragment StoreEntitySet="flood">
+          <ScalarProperty Name="fid" ColumnName="fid" />
+          <ScalarProperty Name="event" ColumnName="event" />
+          <ScalarProperty Name="identifier" ColumnName="identifier" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="expiration" ColumnName="expiration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="histories">
+      <EntityTypeMapping TypeName="dkandevModel.history">
+        <MappingFragment StoreEntitySet="history">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="nid" ColumnName="nid" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="image_effects">
+      <EntityTypeMapping TypeName="dkandevModel.image_effects">
+        <MappingFragment StoreEntitySet="image_effects">
+          <ScalarProperty Name="ieid" ColumnName="ieid" />
+          <ScalarProperty Name="isid" ColumnName="isid" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="data" ColumnName="data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="image_styles">
+      <EntityTypeMapping TypeName="dkandevModel.image_styles">
+        <MappingFragment StoreEntitySet="image_styles">
+          <ScalarProperty Name="isid" ColumnName="isid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="job_schedule">
+      <EntityTypeMapping TypeName="dkandevModel.job_schedule">
+        <MappingFragment StoreEntitySet="job_schedule">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="last" ColumnName="last" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="next" ColumnName="next" />
+          <ScalarProperty Name="periodic" ColumnName="periodic" />
+          <ScalarProperty Name="scheduled" ColumnName="scheduled" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="menu_custom">
+      <EntityTypeMapping TypeName="dkandevModel.menu_custom">
+        <MappingFragment StoreEntitySet="menu_custom">
+          <ScalarProperty Name="menu_name" ColumnName="menu_name" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="menu_links">
+      <EntityTypeMapping TypeName="dkandevModel.menu_links">
+        <MappingFragment StoreEntitySet="menu_links">
+          <ScalarProperty Name="menu_name" ColumnName="menu_name" />
+          <ScalarProperty Name="mlid" ColumnName="mlid" />
+          <ScalarProperty Name="plid" ColumnName="plid" />
+          <ScalarProperty Name="link_path" ColumnName="link_path" />
+          <ScalarProperty Name="router_path" ColumnName="router_path" />
+          <ScalarProperty Name="link_title" ColumnName="link_title" />
+          <ScalarProperty Name="options" ColumnName="options" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="hidden" ColumnName="hidden" />
+          <ScalarProperty Name="external" ColumnName="external" />
+          <ScalarProperty Name="has_children" ColumnName="has_children" />
+          <ScalarProperty Name="expanded" ColumnName="expanded" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="customized" ColumnName="customized" />
+          <ScalarProperty Name="p1" ColumnName="p1" />
+          <ScalarProperty Name="p2" ColumnName="p2" />
+          <ScalarProperty Name="p3" ColumnName="p3" />
+          <ScalarProperty Name="p4" ColumnName="p4" />
+          <ScalarProperty Name="p5" ColumnName="p5" />
+          <ScalarProperty Name="p6" ColumnName="p6" />
+          <ScalarProperty Name="p7" ColumnName="p7" />
+          <ScalarProperty Name="p8" ColumnName="p8" />
+          <ScalarProperty Name="p9" ColumnName="p9" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="menu_router">
+      <EntityTypeMapping TypeName="dkandevModel.menu_router">
+        <MappingFragment StoreEntitySet="menu_router">
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="load_functions" ColumnName="load_functions" />
+          <ScalarProperty Name="to_arg_functions" ColumnName="to_arg_functions" />
+          <ScalarProperty Name="access_callback" ColumnName="access_callback" />
+          <ScalarProperty Name="access_arguments" ColumnName="access_arguments" />
+          <ScalarProperty Name="page_callback" ColumnName="page_callback" />
+          <ScalarProperty Name="page_arguments" ColumnName="page_arguments" />
+          <ScalarProperty Name="delivery_callback" ColumnName="delivery_callback" />
+          <ScalarProperty Name="fit" ColumnName="fit" />
+          <ScalarProperty Name="number_parts" ColumnName="number_parts" />
+          <ScalarProperty Name="context" ColumnName="context" />
+          <ScalarProperty Name="tab_parent" ColumnName="tab_parent" />
+          <ScalarProperty Name="tab_root" ColumnName="tab_root" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="title_callback" ColumnName="title_callback" />
+          <ScalarProperty Name="title_arguments" ColumnName="title_arguments" />
+          <ScalarProperty Name="theme_callback" ColumnName="theme_callback" />
+          <ScalarProperty Name="theme_arguments" ColumnName="theme_arguments" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="include_file" ColumnName="include_file" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="multisteps">
+      <EntityTypeMapping TypeName="dkandevModel.multistep">
+        <MappingFragment StoreEntitySet="multistep">
+          <ScalarProperty Name="nid" ColumnName="nid" />
+          <ScalarProperty Name="step" ColumnName="step" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nodes">
+      <EntityTypeMapping TypeName="dkandevModel.node">
+        <MappingFragment StoreEntitySet="node">
+          <ScalarProperty Name="nid" ColumnName="nid" />
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="changed" ColumnName="changed" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="promote" ColumnName="promote" />
+          <ScalarProperty Name="sticky" ColumnName="sticky" />
+          <ScalarProperty Name="tnid" ColumnName="tnid" />
+          <ScalarProperty Name="translate" ColumnName="translate" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_vid" ColumnName="__unique_vid" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="node_access">
+      <EntityTypeMapping TypeName="dkandevModel.node_access">
+        <MappingFragment StoreEntitySet="node_access">
+          <ScalarProperty Name="nid" ColumnName="nid" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="realm" ColumnName="realm" />
+          <ScalarProperty Name="grant_view" ColumnName="grant_view" />
+          <ScalarProperty Name="grant_update" ColumnName="grant_update" />
+          <ScalarProperty Name="grant_delete" ColumnName="grant_delete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="node_revision">
+      <EntityTypeMapping TypeName="dkandevModel.node_revision">
+        <MappingFragment StoreEntitySet="node_revision">
+          <ScalarProperty Name="nid" ColumnName="nid" />
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="log" ColumnName="log" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="promote" ColumnName="promote" />
+          <ScalarProperty Name="sticky" ColumnName="sticky" />
+          <ScalarProperty Name="vuuid" ColumnName="vuuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="node_type">
+      <EntityTypeMapping TypeName="dkandevModel.node_type">
+        <MappingFragment StoreEntitySet="node_type">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="base" ColumnName="base" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="help" ColumnName="help" />
+          <ScalarProperty Name="has_title" ColumnName="has_title" />
+          <ScalarProperty Name="title_label" ColumnName="title_label" />
+          <ScalarProperty Name="custom" ColumnName="custom" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="disabled" ColumnName="disabled" />
+          <ScalarProperty Name="orig_type" ColumnName="orig_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="og_membership">
+      <EntityTypeMapping TypeName="dkandevModel.og_membership">
+        <MappingFragment StoreEntitySet="og_membership">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="etid" ColumnName="etid" />
+          <ScalarProperty Name="entity_type" ColumnName="entity_type" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="group_type" ColumnName="group_type" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="field_name" ColumnName="field_name" />
+          <ScalarProperty Name="language" ColumnName="language" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="og_membership_type">
+      <EntityTypeMapping TypeName="dkandevModel.og_membership_type">
+        <MappingFragment StoreEntitySet="og_membership_type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="og_role">
+      <EntityTypeMapping TypeName="dkandevModel.og_role">
+        <MappingFragment StoreEntitySet="og_role">
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="group_type" ColumnName="group_type" />
+          <ScalarProperty Name="group_bundle" ColumnName="group_bundle" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="og_role_permission">
+      <EntityTypeMapping TypeName="dkandevModel.og_role_permission">
+        <MappingFragment StoreEntitySet="og_role_permission">
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="permission" ColumnName="permission" />
+          <ScalarProperty Name="module" ColumnName="module" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="og_users_roles">
+      <EntityTypeMapping TypeName="dkandevModel.og_users_roles">
+        <MappingFragment StoreEntitySet="og_users_roles">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="group_type" ColumnName="group_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="queues">
+      <EntityTypeMapping TypeName="dkandevModel.queue">
+        <MappingFragment StoreEntitySet="queue">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+          <ScalarProperty Name="created" ColumnName="created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rdf_mapping">
+      <EntityTypeMapping TypeName="dkandevModel.rdf_mapping">
+        <MappingFragment StoreEntitySet="rdf_mapping">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="bundle" ColumnName="bundle" />
+          <ScalarProperty Name="mapping" ColumnName="mapping" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rdfx_namespaces">
+      <EntityTypeMapping TypeName="dkandevModel.rdfx_namespaces">
+        <MappingFragment StoreEntitySet="rdfx_namespaces">
+          <ScalarProperty Name="nsid" ColumnName="nsid" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="prefix" ColumnName="prefix" />
+          <ScalarProperty Name="uri" ColumnName="uri" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_gid_uri" ColumnName="__unique_gid_uri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rdfx_term_types">
+      <EntityTypeMapping TypeName="dkandevModel.rdfx_term_types">
+        <MappingFragment StoreEntitySet="rdfx_term_types">
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rdfx_terms">
+      <EntityTypeMapping TypeName="dkandevModel.rdfx_terms">
+        <MappingFragment StoreEntitySet="rdfx_terms">
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="nsid" ColumnName="nsid" />
+          <ScalarProperty Name="local_name" ColumnName="local_name" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_nsid_ln" ColumnName="__unique_nsid_ln" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rdfx_vocabulary_graphs">
+      <EntityTypeMapping TypeName="dkandevModel.rdfx_vocabulary_graphs">
+        <MappingFragment StoreEntitySet="rdfx_vocabulary_graphs">
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="main_ns" ColumnName="main_ns" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="date_updated" ColumnName="date_updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="registries">
+      <EntityTypeMapping TypeName="dkandevModel.registry">
+        <MappingFragment StoreEntitySet="registry">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="registry_file">
+      <EntityTypeMapping TypeName="dkandevModel.registry_file">
+        <MappingFragment StoreEntitySet="registry_file">
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="hash" ColumnName="hash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="dkandevModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role_permission">
+      <EntityTypeMapping TypeName="dkandevModel.role_permission">
+        <MappingFragment StoreEntitySet="role_permission">
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="permission" ColumnName="permission" />
+          <ScalarProperty Name="module" ColumnName="module" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rules_config">
+      <EntityTypeMapping TypeName="dkandevModel.rules_config">
+        <MappingFragment StoreEntitySet="rules_config">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="plugin" ColumnName="plugin" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="dirty" ColumnName="dirty" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="access_exposed" ColumnName="access_exposed" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rules_dependencies">
+      <EntityTypeMapping TypeName="dkandevModel.rules_dependencies">
+        <MappingFragment StoreEntitySet="rules_dependencies">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="module" ColumnName="module" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rules_tags">
+      <EntityTypeMapping TypeName="dkandevModel.rules_tags">
+        <MappingFragment StoreEntitySet="rules_tags">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rules_trigger">
+      <EntityTypeMapping TypeName="dkandevModel.rules_trigger">
+        <MappingFragment StoreEntitySet="rules_trigger">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="event" ColumnName="event" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_db_datasets_author">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_db_datasets_author">
+        <MappingFragment StoreEntitySet="search_api_db_datasets_author">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_db_datasets_search_api_access_node">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_db_datasets_search_api_access_node">
+        <MappingFragment StoreEntitySet="search_api_db_datasets_search_api_access_node">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_db_datasets_search_api_language">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_db_datasets_search_api_language">
+        <MappingFragment StoreEntitySet="search_api_db_datasets_search_api_language">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_db_datasets_search_api_viewed">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_db_datasets_search_api_viewed">
+        <MappingFragment StoreEntitySet="search_api_db_datasets_search_api_viewed">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="score" ColumnName="score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_db_datasets_status">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_db_datasets_status">
+        <MappingFragment StoreEntitySet="search_api_db_datasets_status">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_db_datasets_title">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_db_datasets_title">
+        <MappingFragment StoreEntitySet="search_api_db_datasets_title">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_db_datasets_type">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_db_datasets_type">
+        <MappingFragment StoreEntitySet="search_api_db_datasets_type">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_index">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_index">
+        <MappingFragment StoreEntitySet="search_api_index">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="machine_name" ColumnName="machine_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="server" ColumnName="server" />
+          <ScalarProperty Name="item_type" ColumnName="item_type" />
+          <ScalarProperty Name="options" ColumnName="options" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="read_only" ColumnName="read_only" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_machine_name" ColumnName="__unique_machine_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_item">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_item">
+        <MappingFragment StoreEntitySet="search_api_item">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="index_id" ColumnName="index_id" />
+          <ScalarProperty Name="changed" ColumnName="changed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="search_api_server">
+      <EntityTypeMapping TypeName="dkandevModel.search_api_server">
+        <MappingFragment StoreEntitySet="search_api_server">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="machine_name" ColumnName="machine_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="class" ColumnName="class" />
+          <ScalarProperty Name="options" ColumnName="options" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_machine_name" ColumnName="__unique_machine_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="semaphores">
+      <EntityTypeMapping TypeName="dkandevModel.semaphore">
+        <MappingFragment StoreEntitySet="semaphore">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="expire" ColumnName="expire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sequences">
+      <EntityTypeMapping TypeName="dkandevModel.sequence">
+        <MappingFragment StoreEntitySet="sequences">
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="services_endpoint">
+      <EntityTypeMapping TypeName="dkandevModel.services_endpoint">
+        <MappingFragment StoreEntitySet="services_endpoint">
+          <ScalarProperty Name="eid" ColumnName="eid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="server" ColumnName="server" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="authentication" ColumnName="authentication" />
+          <ScalarProperty Name="server_settings" ColumnName="server_settings" />
+          <ScalarProperty Name="resources" ColumnName="resources" />
+          <ScalarProperty Name="debug" ColumnName="debug" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sessions">
+      <EntityTypeMapping TypeName="dkandevModel.session">
+        <MappingFragment StoreEntitySet="sessions">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="sid" ColumnName="sid" />
+          <ScalarProperty Name="ssid" ColumnName="ssid" />
+          <ScalarProperty Name="hostname" ColumnName="hostname" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="cache" ColumnName="cache" />
+          <ScalarProperty Name="session1" ColumnName="session" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="systems">
+      <EntityTypeMapping TypeName="dkandevModel.system">
+        <MappingFragment StoreEntitySet="system">
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="bootstrap" ColumnName="bootstrap" />
+          <ScalarProperty Name="schema_version" ColumnName="schema_version" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="info" ColumnName="info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxonomy_index">
+      <EntityTypeMapping TypeName="dkandevModel.taxonomy_index">
+        <MappingFragment StoreEntitySet="taxonomy_index">
+          <ScalarProperty Name="nid" ColumnName="nid" />
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="sticky" ColumnName="sticky" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxonomy_term_data">
+      <EntityTypeMapping TypeName="dkandevModel.taxonomy_term_data">
+        <MappingFragment StoreEntitySet="taxonomy_term_data">
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxonomy_term_hierarchy">
+      <EntityTypeMapping TypeName="dkandevModel.taxonomy_term_hierarchy">
+        <MappingFragment StoreEntitySet="taxonomy_term_hierarchy">
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taxonomy_vocabulary">
+      <EntityTypeMapping TypeName="dkandevModel.taxonomy_vocabulary">
+        <MappingFragment StoreEntitySet="taxonomy_vocabulary">
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="machine_name" ColumnName="machine_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="hierarchy" ColumnName="hierarchy" />
+          <ScalarProperty Name="module" ColumnName="module" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_machine_name" ColumnName="__unique_machine_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="url_alias">
+      <EntityTypeMapping TypeName="dkandevModel.url_alias">
+        <MappingFragment StoreEntitySet="url_alias">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="source" ColumnName="source" />
+          <ScalarProperty Name="alias" ColumnName="alias" />
+          <ScalarProperty Name="language" ColumnName="language" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="dkandevModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="theme" ColumnName="theme" />
+          <ScalarProperty Name="signature" ColumnName="signature" />
+          <ScalarProperty Name="signature_format" ColumnName="signature_format" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="access" ColumnName="access" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="timezone" ColumnName="timezone" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="init" ColumnName="init" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users_roles">
+      <EntityTypeMapping TypeName="dkandevModel.users_roles">
+        <MappingFragment StoreEntitySet="users_roles">
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="rid" ColumnName="rid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="variables">
+      <EntityTypeMapping TypeName="dkandevModel.variable">
+        <MappingFragment StoreEntitySet="variable">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="views_display">
+      <EntityTypeMapping TypeName="dkandevModel.views_display">
+        <MappingFragment StoreEntitySet="views_display">
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="display_title" ColumnName="display_title" />
+          <ScalarProperty Name="display_plugin" ColumnName="display_plugin" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="display_options" ColumnName="display_options" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="views_view">
+      <EntityTypeMapping TypeName="dkandevModel.views_view">
+        <MappingFragment StoreEntitySet="views_view">
+          <ScalarProperty Name="vid" ColumnName="vid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+          <ScalarProperty Name="base_table" ColumnName="base_table" />
+          <ScalarProperty Name="human_name" ColumnName="human_name" />
+          <ScalarProperty Name="core" ColumnName="core" />
+          <ScalarProperty Name="C__pk" ColumnName="__pk" />
+          <ScalarProperty Name="C__unique_name" ColumnName="__unique_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="watchdogs">
+      <EntityTypeMapping TypeName="dkandevModel.watchdog">
+        <MappingFragment StoreEntitySet="watchdog">
+          <ScalarProperty Name="wid" ColumnName="wid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="variables" ColumnName="variables" />
+          <ScalarProperty Name="severity" ColumnName="severity" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="referer" ColumnName="referer" />
+          <ScalarProperty Name="hostname" ColumnName="hostname" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

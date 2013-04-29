@@ -1,0 +1,2250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dkandevModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="dkandevModelStoreContainer">
+    <EntitySet Name="actions" EntityType="dkandevModel.Store.actions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="authmap" EntityType="dkandevModel.Store.authmap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="batch" EntityType="dkandevModel.Store.batch" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="block" EntityType="dkandevModel.Store.block" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="block_custom" EntityType="dkandevModel.Store.block_custom" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="block_node_type" EntityType="dkandevModel.Store.block_node_type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="block_role" EntityType="dkandevModel.Store.block_role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="blocked_ips" EntityType="dkandevModel.Store.blocked_ips" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="box" EntityType="dkandevModel.Store.box" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bueditor_buttons" EntityType="dkandevModel.Store.bueditor_buttons" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bueditor_editors" EntityType="dkandevModel.Store.bueditor_editors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache" EntityType="dkandevModel.Store.cache" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_admin_menu" EntityType="dkandevModel.Store.cache_admin_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_block" EntityType="dkandevModel.Store.cache_block" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_bootstrap" EntityType="dkandevModel.Store.cache_bootstrap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_entity_og_membership" EntityType="dkandevModel.Store.cache_entity_og_membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_entity_og_membership_type" EntityType="dkandevModel.Store.cache_entity_og_membership_type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_field" EntityType="dkandevModel.Store.cache_field" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_filter" EntityType="dkandevModel.Store.cache_filter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_form" EntityType="dkandevModel.Store.cache_form" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_gravatar" EntityType="dkandevModel.Store.cache_gravatar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_image" EntityType="dkandevModel.Store.cache_image" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_libraries" EntityType="dkandevModel.Store.cache_libraries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_menu" EntityType="dkandevModel.Store.cache_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_page" EntityType="dkandevModel.Store.cache_page" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_path" EntityType="dkandevModel.Store.cache_path" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_rules" EntityType="dkandevModel.Store.cache_rules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_token" EntityType="dkandevModel.Store.cache_token" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_update" EntityType="dkandevModel.Store.cache_update" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_views" EntityType="dkandevModel.Store.cache_views" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cache_views_data" EntityType="dkandevModel.Store.cache_views_data" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="context" EntityType="dkandevModel.Store.context" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ctools_css_cache" EntityType="dkandevModel.Store.ctools_css_cache" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ctools_object_cache" EntityType="dkandevModel.Store.ctools_object_cache" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="data_tables" EntityType="dkandevModel.Store.data_tables" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="date_format_locale" EntityType="dkandevModel.Store.date_format_locale" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="date_format_type" EntityType="dkandevModel.Store.date_format_type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="date_formats" EntityType="dkandevModel.Store.date_formats" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="defaultcontent" EntityType="dkandevModel.Store.defaultcontent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="delta" EntityType="dkandevModel.Store.delta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="facetapi" EntityType="dkandevModel.Store.facetapi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="feeds_importer" EntityType="dkandevModel.Store.feeds_importer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="feeds_item" EntityType="dkandevModel.Store.feeds_item" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="feeds_log" EntityType="dkandevModel.Store.feeds_log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="feeds_push_subscriptions" EntityType="dkandevModel.Store.feeds_push_subscriptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="feeds_source" EntityType="dkandevModel.Store.feeds_source" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_config" EntityType="dkandevModel.Store.field_config" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_config_instance" EntityType="dkandevModel.Store.field_config_instance" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_body" EntityType="dkandevModel.Store.field_data_body" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_additional_info" EntityType="dkandevModel.Store.field_data_field_additional_info" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_author" EntityType="dkandevModel.Store.field_data_field_author" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_data_dictionary" EntityType="dkandevModel.Store.field_data_field_data_dictionary" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_dataset_ref" EntityType="dkandevModel.Store.field_data_field_dataset_ref" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_format" EntityType="dkandevModel.Store.field_data_field_format" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_frequency" EntityType="dkandevModel.Store.field_data_field_frequency" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_granularity" EntityType="dkandevModel.Store.field_data_field_granularity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_image" EntityType="dkandevModel.Store.field_data_field_image" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_license" EntityType="dkandevModel.Store.field_data_field_license" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_link_api" EntityType="dkandevModel.Store.field_data_field_link_api" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_link_file" EntityType="dkandevModel.Store.field_data_field_link_file" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_resource" EntityType="dkandevModel.Store.field_data_field_resource" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_spatial" EntityType="dkandevModel.Store.field_data_field_spatial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_spatial_geographical_cover" EntityType="dkandevModel.Store.field_data_field_spatial_geographical_cover" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_tags" EntityType="dkandevModel.Store.field_data_field_tags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_temporal_coverage" EntityType="dkandevModel.Store.field_data_field_temporal_coverage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_field_upload" EntityType="dkandevModel.Store.field_data_field_upload" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_group_group" EntityType="dkandevModel.Store.field_data_group_group" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_og_group_ref" EntityType="dkandevModel.Store.field_data_og_group_ref" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_og_membership_request" EntityType="dkandevModel.Store.field_data_og_membership_request" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_data_og_user_node" EntityType="dkandevModel.Store.field_data_og_user_node" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_group" EntityType="dkandevModel.Store.field_group" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_body" EntityType="dkandevModel.Store.field_revision_body" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_additional_info" EntityType="dkandevModel.Store.field_revision_field_additional_info" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_author" EntityType="dkandevModel.Store.field_revision_field_author" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_data_dictionary" EntityType="dkandevModel.Store.field_revision_field_data_dictionary" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_dataset_ref" EntityType="dkandevModel.Store.field_revision_field_dataset_ref" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_format" EntityType="dkandevModel.Store.field_revision_field_format" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_frequency" EntityType="dkandevModel.Store.field_revision_field_frequency" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_granularity" EntityType="dkandevModel.Store.field_revision_field_granularity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_image" EntityType="dkandevModel.Store.field_revision_field_image" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_license" EntityType="dkandevModel.Store.field_revision_field_license" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_link_api" EntityType="dkandevModel.Store.field_revision_field_link_api" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_link_file" EntityType="dkandevModel.Store.field_revision_field_link_file" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_resource" EntityType="dkandevModel.Store.field_revision_field_resource" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_spatial" EntityType="dkandevModel.Store.field_revision_field_spatial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_spatial_geographical_cover" EntityType="dkandevModel.Store.field_revision_field_spatial_geographical_cover" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_tags" EntityType="dkandevModel.Store.field_revision_field_tags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_temporal_coverage" EntityType="dkandevModel.Store.field_revision_field_temporal_coverage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_field_upload" EntityType="dkandevModel.Store.field_revision_field_upload" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_group_group" EntityType="dkandevModel.Store.field_revision_group_group" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_og_group_ref" EntityType="dkandevModel.Store.field_revision_og_group_ref" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_og_membership_request" EntityType="dkandevModel.Store.field_revision_og_membership_request" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="field_revision_og_user_node" EntityType="dkandevModel.Store.field_revision_og_user_node" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="file_managed" EntityType="dkandevModel.Store.file_managed" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="file_usage" EntityType="dkandevModel.Store.file_usage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="filter" EntityType="dkandevModel.Store.filter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="filter_format" EntityType="dkandevModel.Store.filter_format" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="flood" EntityType="dkandevModel.Store.flood" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="history" EntityType="dkandevModel.Store.history" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="image_effects" EntityType="dkandevModel.Store.image_effects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="image_styles" EntityType="dkandevModel.Store.image_styles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="job_schedule" EntityType="dkandevModel.Store.job_schedule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="menu_custom" EntityType="dkandevModel.Store.menu_custom" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="menu_links" EntityType="dkandevModel.Store.menu_links" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="menu_router" EntityType="dkandevModel.Store.menu_router" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="multistep" EntityType="dkandevModel.Store.multistep" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="node" EntityType="dkandevModel.Store.node" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="node_access" EntityType="dkandevModel.Store.node_access" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="node_revision" EntityType="dkandevModel.Store.node_revision" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="node_type" EntityType="dkandevModel.Store.node_type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="og_membership" EntityType="dkandevModel.Store.og_membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="og_membership_type" EntityType="dkandevModel.Store.og_membership_type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="og_role" EntityType="dkandevModel.Store.og_role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="og_role_permission" EntityType="dkandevModel.Store.og_role_permission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="og_users_roles" EntityType="dkandevModel.Store.og_users_roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="queue" EntityType="dkandevModel.Store.queue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rdf_mapping" EntityType="dkandevModel.Store.rdf_mapping" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rdfx_namespaces" EntityType="dkandevModel.Store.rdfx_namespaces" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rdfx_term_types" EntityType="dkandevModel.Store.rdfx_term_types" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rdfx_terms" EntityType="dkandevModel.Store.rdfx_terms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rdfx_vocabulary_graphs" EntityType="dkandevModel.Store.rdfx_vocabulary_graphs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="registry" EntityType="dkandevModel.Store.registry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="registry_file" EntityType="dkandevModel.Store.registry_file" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="role" EntityType="dkandevModel.Store.role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="role_permission" EntityType="dkandevModel.Store.role_permission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rules_config" EntityType="dkandevModel.Store.rules_config" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rules_dependencies" EntityType="dkandevModel.Store.rules_dependencies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rules_tags" EntityType="dkandevModel.Store.rules_tags" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rules_trigger" EntityType="dkandevModel.Store.rules_trigger" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_db_datasets_author" EntityType="dkandevModel.Store.search_api_db_datasets_author" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_db_datasets_search_api_access_node" EntityType="dkandevModel.Store.search_api_db_datasets_search_api_access_node" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_db_datasets_search_api_language" EntityType="dkandevModel.Store.search_api_db_datasets_search_api_language" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_db_datasets_search_api_viewed" EntityType="dkandevModel.Store.search_api_db_datasets_search_api_viewed" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_db_datasets_status" EntityType="dkandevModel.Store.search_api_db_datasets_status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_db_datasets_title" EntityType="dkandevModel.Store.search_api_db_datasets_title" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_db_datasets_type" EntityType="dkandevModel.Store.search_api_db_datasets_type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_index" EntityType="dkandevModel.Store.search_api_index" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_item" EntityType="dkandevModel.Store.search_api_item" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="search_api_server" EntityType="dkandevModel.Store.search_api_server" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="semaphore" EntityType="dkandevModel.Store.semaphore" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sequences" EntityType="dkandevModel.Store.sequences" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="services_endpoint" EntityType="dkandevModel.Store.services_endpoint" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sessions" EntityType="dkandevModel.Store.sessions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="system" EntityType="dkandevModel.Store.system" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxonomy_index" EntityType="dkandevModel.Store.taxonomy_index" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxonomy_term_data" EntityType="dkandevModel.Store.taxonomy_term_data" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxonomy_term_hierarchy" EntityType="dkandevModel.Store.taxonomy_term_hierarchy" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="taxonomy_vocabulary" EntityType="dkandevModel.Store.taxonomy_vocabulary" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="url_alias" EntityType="dkandevModel.Store.url_alias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users" EntityType="dkandevModel.Store.users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users_roles" EntityType="dkandevModel.Store.users_roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="variable" EntityType="dkandevModel.Store.variable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="views_display" EntityType="dkandevModel.Store.views_display" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="views_view" EntityType="dkandevModel.Store.views_view" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="watchdog" EntityType="dkandevModel.Store.watchdog" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="actions">
+    <Key>
+      <PropertyRef Name="aid" />
+    </Key>
+    <Property Name="aid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="callback" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="parameters" Type="varbinary(max)" Nullable="false" />
+    <Property Name="label" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="authmap">
+    <Key>
+      <PropertyRef Name="aid" />
+    </Key>
+    <Property Name="aid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="authname" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_authname" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="batch">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="int" Nullable="false" />
+    <Property Name="token" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+    <Property Name="batch" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="block">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="delta" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="theme" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="region" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="custom" Type="smallint" Nullable="false" />
+    <Property Name="visibility" Type="smallint" Nullable="false" />
+    <Property Name="pages" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="cache" Type="smallint" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_tmd" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="block_custom">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="body" Type="nvarchar(max)" />
+    <Property Name="info" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="format" Type="nvarchar" MaxLength="255" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_info" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="block_node_type">
+    <Key>
+      <PropertyRef Name="module" />
+      <PropertyRef Name="delta" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="delta" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="block_role">
+    <Key>
+      <PropertyRef Name="module" />
+      <PropertyRef Name="delta" />
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="delta" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="rid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="blocked_ips">
+    <Key>
+      <PropertyRef Name="iid" />
+    </Key>
+    <Property Name="iid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ip" Type="nvarchar" Nullable="false" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="box">
+    <Key>
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="delta" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="plugin_key" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+    <Property Name="options" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="bueditor_buttons">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="eid" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="icon" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="accesskey" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="weight" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bueditor_editors">
+    <Key>
+      <PropertyRef Name="eid" />
+    </Key>
+    <Property Name="eid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="pages" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="excludes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="iconpath" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="librarypath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="spriteon" Type="smallint" Nullable="false" />
+    <Property Name="spritename" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="cache">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_admin_menu">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_block">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_bootstrap">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_entity_og_membership">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_entity_og_membership_type">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_field">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_filter">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_form">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_gravatar">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_image">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_libraries">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_menu">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_page">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_path">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_rules">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_token">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_update">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_views">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_views_data">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="serialized" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="context">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="tag" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="conditions" Type="nvarchar(max)" />
+    <Property Name="reactions" Type="nvarchar(max)" />
+    <Property Name="condition_mode" Type="int" />
+  </EntityType>
+  <EntityType Name="ctools_css_cache">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="filename" Type="nvarchar" MaxLength="255" />
+    <Property Name="css" Type="nvarchar(max)" />
+    <Property Name="filter" Type="smallint" />
+  </EntityType>
+  <EntityType Name="ctools_object_cache">
+    <Key>
+      <PropertyRef Name="sid" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="obj" />
+    </Key>
+    <Property Name="sid" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="obj" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="updated" Type="int" Nullable="false" />
+    <Property Name="data" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="data_tables">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="table_schema" Type="nvarchar(max)" />
+    <Property Name="meta" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="date_format_locale">
+    <Key>
+      <PropertyRef Name="type" />
+      <PropertyRef Name="language" />
+    </Key>
+    <Property Name="format" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="date_format_type">
+    <Key>
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="locked" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="date_formats">
+    <Key>
+      <PropertyRef Name="dfid" />
+    </Key>
+    <Property Name="dfid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="format" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="locked" Type="smallint" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_formats" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="defaultcontent">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="225" />
+    <Property Name="nid" Type="int" />
+  </EntityType>
+  <EntityType Name="delta">
+    <Key>
+      <PropertyRef Name="machine_name" />
+    </Key>
+    <Property Name="machine_name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="theme" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="mode" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="parent" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="settings" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="facetapi">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="searcher" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="realm" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="facet" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="enabled" Type="smallint" Nullable="false" />
+    <Property Name="settings" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="feeds_importer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="config" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="feeds_item">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="entity_id" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="feed_nid" Type="int" Nullable="false" />
+    <Property Name="imported" Type="int" Nullable="false" />
+    <Property Name="url" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="guid" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="hash" Type="nvarchar" Nullable="false" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="feeds_log">
+    <Key>
+      <PropertyRef Name="flid" />
+    </Key>
+    <Property Name="flid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="feed_nid" Type="int" Nullable="false" />
+    <Property Name="log_time" Type="int" Nullable="false" />
+    <Property Name="request_time" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="variables" Type="varbinary(max)" Nullable="false" />
+    <Property Name="severity" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="feeds_push_subscriptions">
+    <Key>
+      <PropertyRef Name="domain" />
+      <PropertyRef Name="subscriber_id" />
+    </Key>
+    <Property Name="domain" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="subscriber_id" Type="int" Nullable="false" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+    <Property Name="hub" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="topic" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="secret" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="status" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="post_fields" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="feeds_source">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="feed_nid" />
+    </Key>
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="feed_nid" Type="int" Nullable="false" />
+    <Property Name="config" Type="varbinary(max)" />
+    <Property Name="source" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="state" Type="varbinary(max)" />
+    <Property Name="fetcher_result" Type="varbinary(max)" />
+    <Property Name="imported" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="field_name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="active" Type="smallint" Nullable="false" />
+    <Property Name="storage_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="storage_module" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="storage_active" Type="smallint" Nullable="false" />
+    <Property Name="locked" Type="smallint" Nullable="false" />
+    <Property Name="data" Type="varbinary(max)" Nullable="false" />
+    <Property Name="cardinality" Type="smallint" Nullable="false" />
+    <Property Name="translatable" Type="smallint" Nullable="false" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_config_instance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="field_id" Type="int" Nullable="false" />
+    <Property Name="field_name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="data" Type="varbinary(max)" Nullable="false" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_body">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="body_value" Type="nvarchar(max)" />
+    <Property Name="body_summary" Type="nvarchar(max)" />
+    <Property Name="body_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_field_additional_info">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_additional_info_first" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_additional_info_second" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_field_author">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_author_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_author_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_field_data_dictionary">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_data_dictionary_value" Type="nvarchar(max)" />
+    <Property Name="field_data_dictionary_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_field_dataset_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_dataset_ref_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_format">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_format_tid" Type="int" />
+  </EntityType>
+  <EntityType Name="field_data_field_frequency">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_frequency_value" Type="int" />
+  </EntityType>
+  <EntityType Name="field_data_field_granularity">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_granularity_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_granularity_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_field_image">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_image_fid" Type="int" />
+    <Property Name="field_image_alt" Type="nvarchar" MaxLength="512" />
+    <Property Name="field_image_title" Type="nvarchar" MaxLength="1024" />
+    <Property Name="field_image_width" Type="int" />
+    <Property Name="field_image_height" Type="int" />
+  </EntityType>
+  <EntityType Name="field_data_field_license">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_license_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_license_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_field_link_api">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_link_api_url" Type="nvarchar" MaxLength="2048" />
+    <Property Name="field_link_api_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_link_api_attributes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="field_data_field_link_file">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_link_file_url" Type="nvarchar" MaxLength="2048" />
+    <Property Name="field_link_file_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_link_file_attributes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="field_data_field_resource">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_resource_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_spatial">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_spatial_wkt" Type="nvarchar(max)" />
+    <Property Name="field_spatial_geo_type" Type="nvarchar(max)" />
+    <Property Name="field_spatial_lat" Type="real" />
+    <Property Name="field_spatial_lon" Type="real" />
+    <Property Name="field_spatial_left" Type="real" />
+    <Property Name="field_spatial_top" Type="real" />
+    <Property Name="field_spatial_right" Type="real" />
+    <Property Name="field_spatial_bottom" Type="real" />
+    <Property Name="field_spatial_srid" Type="int" />
+    <Property Name="field_spatial_accuracy" Type="int" />
+    <Property Name="field_spatial_source" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="field_data_field_spatial_geographical_cover">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_spatial_geographical_cover_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_spatial_geographical_cover_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_field_tags">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_tags_tid" Type="int" />
+  </EntityType>
+  <EntityType Name="field_data_field_temporal_coverage">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_temporal_coverage_value" Type="smalldatetime" />
+    <Property Name="field_temporal_coverage_value2" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="field_data_field_upload">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_upload_fid" Type="int" />
+    <Property Name="field_upload_service_id" Type="nvarchar" MaxLength="1024" />
+    <Property Name="field_upload_grid" Type="int" />
+    <Property Name="field_upload_graph" Type="int" />
+    <Property Name="field_upload_map" Type="int" />
+  </EntityType>
+  <EntityType Name="field_data_group_group">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="group_group_value" Type="int" />
+  </EntityType>
+  <EntityType Name="field_data_og_group_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="og_group_ref_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_og_membership_request">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="og_membership_request_value" Type="nvarchar(max)" />
+    <Property Name="og_membership_request_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_data_og_user_node">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="og_user_node_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_group">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="identifier" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="group_name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="mode" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="parent_name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="data" Type="varbinary(max)" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_identifier" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="field_revision_body">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="body_value" Type="nvarchar(max)" />
+    <Property Name="body_summary" Type="nvarchar(max)" />
+    <Property Name="body_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_field_additional_info">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_additional_info_first" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_additional_info_second" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_field_author">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_author_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_author_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_field_data_dictionary">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_data_dictionary_value" Type="nvarchar(max)" />
+    <Property Name="field_data_dictionary_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_field_dataset_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_dataset_ref_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_format">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_format_tid" Type="int" />
+  </EntityType>
+  <EntityType Name="field_revision_field_frequency">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_frequency_value" Type="int" />
+  </EntityType>
+  <EntityType Name="field_revision_field_granularity">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_granularity_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_granularity_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_field_image">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_image_fid" Type="int" />
+    <Property Name="field_image_alt" Type="nvarchar" MaxLength="512" />
+    <Property Name="field_image_title" Type="nvarchar" MaxLength="1024" />
+    <Property Name="field_image_width" Type="int" />
+    <Property Name="field_image_height" Type="int" />
+  </EntityType>
+  <EntityType Name="field_revision_field_license">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_license_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_license_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_field_link_api">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_link_api_url" Type="nvarchar" MaxLength="2048" />
+    <Property Name="field_link_api_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_link_api_attributes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="field_revision_field_link_file">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_link_file_url" Type="nvarchar" MaxLength="2048" />
+    <Property Name="field_link_file_title" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_link_file_attributes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="field_revision_field_resource">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_resource_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_spatial">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_spatial_wkt" Type="nvarchar(max)" />
+    <Property Name="field_spatial_geo_type" Type="nvarchar(max)" />
+    <Property Name="field_spatial_lat" Type="real" />
+    <Property Name="field_spatial_lon" Type="real" />
+    <Property Name="field_spatial_left" Type="real" />
+    <Property Name="field_spatial_top" Type="real" />
+    <Property Name="field_spatial_right" Type="real" />
+    <Property Name="field_spatial_bottom" Type="real" />
+    <Property Name="field_spatial_srid" Type="int" />
+    <Property Name="field_spatial_accuracy" Type="int" />
+    <Property Name="field_spatial_source" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="field_revision_field_spatial_geographical_cover">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_spatial_geographical_cover_value" Type="nvarchar" MaxLength="255" />
+    <Property Name="field_spatial_geographical_cover_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_field_tags">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_tags_tid" Type="int" />
+  </EntityType>
+  <EntityType Name="field_revision_field_temporal_coverage">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_temporal_coverage_value" Type="smalldatetime" />
+    <Property Name="field_temporal_coverage_value2" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="field_revision_field_upload">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="field_upload_fid" Type="int" />
+    <Property Name="field_upload_service_id" Type="nvarchar" MaxLength="1024" />
+    <Property Name="field_upload_grid" Type="int" />
+    <Property Name="field_upload_graph" Type="int" />
+    <Property Name="field_upload_map" Type="int" />
+  </EntityType>
+  <EntityType Name="field_revision_group_group">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="group_group_value" Type="int" />
+  </EntityType>
+  <EntityType Name="field_revision_og_group_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="og_group_ref_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_revision_og_membership_request">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="og_membership_request_value" Type="nvarchar(max)" />
+    <Property Name="og_membership_request_format" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="field_revision_og_user_node">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="deleted" Type="smallint" Nullable="false" />
+    <Property Name="entity_id" Type="int" Nullable="false" />
+    <Property Name="revision_id" Type="int" Nullable="false" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="delta" Type="int" Nullable="false" />
+    <Property Name="og_user_node_target_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="file_managed">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="filename" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="uri" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="filemime" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="filesize" Type="int" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_uri" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+    <Property Name="uuid" Type="nchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="file_usage">
+    <Key>
+      <PropertyRef Name="fid" />
+      <PropertyRef Name="module" />
+      <PropertyRef Name="type" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="fid" Type="int" Nullable="false" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="count" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="filter">
+    <Key>
+      <PropertyRef Name="format" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="format" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="settings" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="filter_format">
+    <Key>
+      <PropertyRef Name="format" />
+    </Key>
+    <Property Name="format" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="cache" Type="smallint" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="flood">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="event" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="identifier" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+    <Property Name="expiration" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="history">
+    <Key>
+      <PropertyRef Name="uid" />
+      <PropertyRef Name="nid" />
+    </Key>
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="nid" Type="int" Nullable="false" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="image_effects">
+    <Key>
+      <PropertyRef Name="ieid" />
+    </Key>
+    <Property Name="ieid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="isid" Type="int" Nullable="false" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="image_styles">
+    <Key>
+      <PropertyRef Name="isid" />
+    </Key>
+    <Property Name="isid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="job_schedule">
+    <Key>
+      <PropertyRef Name="__pk" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="last" Type="int" Nullable="false" />
+    <Property Name="period" Type="int" Nullable="false" />
+    <Property Name="next" Type="int" Nullable="false" />
+    <Property Name="periodic" Type="smallint" Nullable="false" />
+    <Property Name="scheduled" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="menu_custom">
+    <Key>
+      <PropertyRef Name="menu_name" />
+    </Key>
+    <Property Name="menu_name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="menu_links">
+    <Key>
+      <PropertyRef Name="mlid" />
+    </Key>
+    <Property Name="menu_name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="mlid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="plid" Type="int" Nullable="false" />
+    <Property Name="link_path" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="router_path" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="link_title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="options" Type="varbinary(max)" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="hidden" Type="smallint" Nullable="false" />
+    <Property Name="external" Type="smallint" Nullable="false" />
+    <Property Name="has_children" Type="smallint" Nullable="false" />
+    <Property Name="expanded" Type="smallint" Nullable="false" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="depth" Type="smallint" Nullable="false" />
+    <Property Name="customized" Type="smallint" Nullable="false" />
+    <Property Name="p1" Type="int" Nullable="false" />
+    <Property Name="p2" Type="int" Nullable="false" />
+    <Property Name="p3" Type="int" Nullable="false" />
+    <Property Name="p4" Type="int" Nullable="false" />
+    <Property Name="p5" Type="int" Nullable="false" />
+    <Property Name="p6" Type="int" Nullable="false" />
+    <Property Name="p7" Type="int" Nullable="false" />
+    <Property Name="p8" Type="int" Nullable="false" />
+    <Property Name="p9" Type="int" Nullable="false" />
+    <Property Name="updated" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="menu_router">
+    <Key>
+      <PropertyRef Name="path" />
+    </Key>
+    <Property Name="path" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="load_functions" Type="varbinary(max)" Nullable="false" />
+    <Property Name="to_arg_functions" Type="varbinary(max)" Nullable="false" />
+    <Property Name="access_callback" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="access_arguments" Type="varbinary(max)" />
+    <Property Name="page_callback" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="page_arguments" Type="varbinary(max)" />
+    <Property Name="delivery_callback" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="fit" Type="int" Nullable="false" />
+    <Property Name="number_parts" Type="smallint" Nullable="false" />
+    <Property Name="context" Type="int" Nullable="false" />
+    <Property Name="tab_parent" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="tab_root" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="title_callback" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="title_arguments" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="theme_callback" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="theme_arguments" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="position" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="include_file" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="multistep">
+    <Key>
+      <PropertyRef Name="nid" />
+      <PropertyRef Name="step" />
+    </Key>
+    <Property Name="nid" Type="int" Nullable="false" />
+    <Property Name="step" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="status" Type="nvarchar" Nullable="false" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="node">
+    <Key>
+      <PropertyRef Name="nid" />
+    </Key>
+    <Property Name="nid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vid" Type="int" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="changed" Type="int" Nullable="false" />
+    <Property Name="comment" Type="int" Nullable="false" />
+    <Property Name="promote" Type="int" Nullable="false" />
+    <Property Name="sticky" Type="int" Nullable="false" />
+    <Property Name="tnid" Type="int" Nullable="false" />
+    <Property Name="translate" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_vid" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+    <Property Name="uuid" Type="nchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="node_access">
+    <Key>
+      <PropertyRef Name="nid" />
+      <PropertyRef Name="gid" />
+      <PropertyRef Name="realm" />
+    </Key>
+    <Property Name="nid" Type="int" Nullable="false" />
+    <Property Name="gid" Type="int" Nullable="false" />
+    <Property Name="realm" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="grant_view" Type="smallint" Nullable="false" />
+    <Property Name="grant_update" Type="smallint" Nullable="false" />
+    <Property Name="grant_delete" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="node_revision">
+    <Key>
+      <PropertyRef Name="vid" />
+    </Key>
+    <Property Name="nid" Type="int" Nullable="false" />
+    <Property Name="vid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="log" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="comment" Type="int" Nullable="false" />
+    <Property Name="promote" Type="int" Nullable="false" />
+    <Property Name="sticky" Type="int" Nullable="false" />
+    <Property Name="vuuid" Type="nchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="node_type">
+    <Key>
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="base" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="help" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="has_title" Type="smallint" Nullable="false" />
+    <Property Name="title_label" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="custom" Type="smallint" Nullable="false" />
+    <Property Name="modified" Type="smallint" Nullable="false" />
+    <Property Name="locked" Type="smallint" Nullable="false" />
+    <Property Name="disabled" Type="smallint" Nullable="false" />
+    <Property Name="orig_type" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="og_membership">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="etid" Type="int" Nullable="false" />
+    <Property Name="entity_type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="gid" Type="int" Nullable="false" />
+    <Property Name="group_type" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="state" Type="nvarchar" MaxLength="255" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="field_name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="og_membership_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="module" Type="nvarchar" MaxLength="255" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="og_role">
+    <Key>
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="rid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="gid" Type="int" Nullable="false" />
+    <Property Name="group_type" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="group_bundle" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="og_role_permission">
+    <Key>
+      <PropertyRef Name="rid" />
+      <PropertyRef Name="permission" />
+    </Key>
+    <Property Name="rid" Type="int" Nullable="false" />
+    <Property Name="permission" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="og_users_roles">
+    <Key>
+      <PropertyRef Name="uid" />
+      <PropertyRef Name="rid" />
+      <PropertyRef Name="gid" />
+    </Key>
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="rid" Type="int" Nullable="false" />
+    <Property Name="gid" Type="int" Nullable="false" />
+    <Property Name="group_type" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="queue">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="expire" Type="int" Nullable="false" />
+    <Property Name="created" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rdf_mapping">
+    <Key>
+      <PropertyRef Name="type" />
+      <PropertyRef Name="bundle" />
+    </Key>
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="bundle" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="mapping" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="rdfx_namespaces">
+    <Key>
+      <PropertyRef Name="nsid" />
+    </Key>
+    <Property Name="nsid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="gid" Type="int" Nullable="false" />
+    <Property Name="prefix" Type="nvarchar" MaxLength="255" />
+    <Property Name="uri" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_gid_uri" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="rdfx_term_types">
+    <Key>
+      <PropertyRef Name="tid" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="tid" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="rdfx_terms">
+    <Key>
+      <PropertyRef Name="tid" />
+    </Key>
+    <Property Name="tid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nsid" Type="int" Nullable="false" />
+    <Property Name="local_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_nsid_ln" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="rdfx_vocabulary_graphs">
+    <Key>
+      <PropertyRef Name="gid" />
+    </Key>
+    <Property Name="gid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="main_ns" Type="int" Nullable="false" />
+    <Property Name="date_created" Type="int" Nullable="false" />
+    <Property Name="date_updated" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="registry">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="9" />
+    <Property Name="filename" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="weight" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="registry_file">
+    <Key>
+      <PropertyRef Name="filename" />
+    </Key>
+    <Property Name="filename" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="hash" Type="nvarchar" Nullable="false" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="rid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="role_permission">
+    <Key>
+      <PropertyRef Name="rid" />
+      <PropertyRef Name="permission" />
+    </Key>
+    <Property Name="rid" Type="int" Nullable="false" />
+    <Property Name="permission" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="rules_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="label" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="plugin" Type="nvarchar" Nullable="false" MaxLength="127" />
+    <Property Name="active" Type="int" Nullable="false" />
+    <Property Name="weight" Type="smallint" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="dirty" Type="smallint" Nullable="false" />
+    <Property Name="module" Type="nvarchar" MaxLength="255" />
+    <Property Name="access_exposed" Type="smallint" Nullable="false" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="rules_dependencies">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="module" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="rules_tags">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="tag" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="tag" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="rules_trigger">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="event" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="event" Type="nvarchar" Nullable="false" MaxLength="127" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_author">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="int" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_search_api_access_node">
+    <Key>
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="value" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_search_api_language">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_search_api_viewed">
+    <Key>
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="word" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="word" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="score" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_status">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="smallint" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_title">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_type">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="value" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="search_api_index">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="machine_name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="server" Type="nvarchar" MaxLength="50" />
+    <Property Name="item_type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="options" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="enabled" Type="smallint" Nullable="false" />
+    <Property Name="read_only" Type="smallint" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="module" Type="nvarchar" MaxLength="255" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_machine_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="search_api_item">
+    <Key>
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="index_id" />
+    </Key>
+    <Property Name="item_id" Type="int" Nullable="false" />
+    <Property Name="index_id" Type="int" Nullable="false" />
+    <Property Name="changed" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="search_api_server">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="machine_name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="class" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="options" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="enabled" Type="smallint" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="module" Type="nvarchar" MaxLength="255" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_machine_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="semaphore">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="value" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="expire" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sequences">
+    <Key>
+      <PropertyRef Name="value" />
+    </Key>
+    <Property Name="value" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="services_endpoint">
+    <Key>
+      <PropertyRef Name="eid" />
+    </Key>
+    <Property Name="eid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="server" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="path" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="authentication" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="server_settings" Type="varbinary(max)" Nullable="false" />
+    <Property Name="resources" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="debug" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="sessions">
+    <Key>
+      <PropertyRef Name="sid" />
+      <PropertyRef Name="ssid" />
+    </Key>
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="sid" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="ssid" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="hostname" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+    <Property Name="cache" Type="int" Nullable="false" />
+    <Property Name="session" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="system">
+    <Key>
+      <PropertyRef Name="filename" />
+    </Key>
+    <Property Name="filename" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="owner" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="bootstrap" Type="int" Nullable="false" />
+    <Property Name="schema_version" Type="smallint" Nullable="false" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="info" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="taxonomy_index">
+    <Key>
+      <PropertyRef Name="__pk" />
+    </Key>
+    <Property Name="nid" Type="int" Nullable="false" />
+    <Property Name="tid" Type="int" Nullable="false" />
+    <Property Name="sticky" Type="smallint" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="taxonomy_term_data">
+    <Key>
+      <PropertyRef Name="tid" />
+    </Key>
+    <Property Name="tid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vid" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="format" Type="nvarchar" MaxLength="255" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="uuid" Type="nchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="taxonomy_term_hierarchy">
+    <Key>
+      <PropertyRef Name="tid" />
+      <PropertyRef Name="parent" />
+    </Key>
+    <Property Name="tid" Type="int" Nullable="false" />
+    <Property Name="parent" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="taxonomy_vocabulary">
+    <Key>
+      <PropertyRef Name="vid" />
+    </Key>
+    <Property Name="vid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="machine_name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="hierarchy" Type="smallint" Nullable="false" />
+    <Property Name="module" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="weight" Type="int" Nullable="false" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_machine_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="url_alias">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="source" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="alias" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="60" />
+    <Property Name="pass" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="mail" Type="nvarchar" MaxLength="254" />
+    <Property Name="theme" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="signature" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="signature_format" Type="nvarchar" MaxLength="255" />
+    <Property Name="created" Type="int" Nullable="false" />
+    <Property Name="access" Type="int" Nullable="false" />
+    <Property Name="login" Type="int" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="timezone" Type="nvarchar" MaxLength="32" />
+    <Property Name="language" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="picture" Type="int" Nullable="false" />
+    <Property Name="init" Type="nvarchar" MaxLength="254" />
+    <Property Name="data" Type="varbinary(max)" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+    <Property Name="uuid" Type="nchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="users_roles">
+    <Key>
+      <PropertyRef Name="uid" />
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="rid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="variable">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="value" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="views_display">
+    <Key>
+      <PropertyRef Name="vid" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="vid" Type="int" Nullable="false" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="display_title" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="display_plugin" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="position" Type="int" />
+    <Property Name="display_options" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="views_view">
+    <Key>
+      <PropertyRef Name="vid" />
+    </Key>
+    <Property Name="vid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="description" Type="nvarchar" MaxLength="255" />
+    <Property Name="tag" Type="nvarchar" MaxLength="255" />
+    <Property Name="base_table" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="human_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="core" Type="int" />
+    <Property Name="__pk" Type="uniqueidentifier" />
+    <Property Name="__unique_name" Type="varbinary" MaxLength="16" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="watchdog">
+    <Key>
+      <PropertyRef Name="wid" />
+    </Key>
+    <Property Name="wid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="variables" Type="varbinary(max)" Nullable="false" />
+    <Property Name="severity" Type="smallint" Nullable="false" />
+    <Property Name="link" Type="nvarchar" MaxLength="255" />
+    <Property Name="location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="referer" Type="nvarchar(max)" />
+    <Property Name="hostname" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="timestamp" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

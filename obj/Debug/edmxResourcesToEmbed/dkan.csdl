@@ -1,0 +1,2268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dkandevModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="dkandevEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="actions" EntityType="dkandevModel.action" />
+    <EntitySet Name="authmaps" EntityType="dkandevModel.authmap" />
+    <EntitySet Name="batches" EntityType="dkandevModel.batch" />
+    <EntitySet Name="blocks" EntityType="dkandevModel.block" />
+    <EntitySet Name="block_custom" EntityType="dkandevModel.block_custom" />
+    <EntitySet Name="block_node_type" EntityType="dkandevModel.block_node_type" />
+    <EntitySet Name="block_role" EntityType="dkandevModel.block_role" />
+    <EntitySet Name="blocked_ips" EntityType="dkandevModel.blocked_ips" />
+    <EntitySet Name="boxes" EntityType="dkandevModel.box" />
+    <EntitySet Name="bueditor_buttons" EntityType="dkandevModel.bueditor_buttons" />
+    <EntitySet Name="bueditor_editors" EntityType="dkandevModel.bueditor_editors" />
+    <EntitySet Name="caches" EntityType="dkandevModel.cache" />
+    <EntitySet Name="cache_admin_menu" EntityType="dkandevModel.cache_admin_menu" />
+    <EntitySet Name="cache_block" EntityType="dkandevModel.cache_block" />
+    <EntitySet Name="cache_bootstrap" EntityType="dkandevModel.cache_bootstrap" />
+    <EntitySet Name="cache_entity_og_membership" EntityType="dkandevModel.cache_entity_og_membership" />
+    <EntitySet Name="cache_entity_og_membership_type" EntityType="dkandevModel.cache_entity_og_membership_type" />
+    <EntitySet Name="cache_field" EntityType="dkandevModel.cache_field" />
+    <EntitySet Name="cache_filter" EntityType="dkandevModel.cache_filter" />
+    <EntitySet Name="cache_form" EntityType="dkandevModel.cache_form" />
+    <EntitySet Name="cache_gravatar" EntityType="dkandevModel.cache_gravatar" />
+    <EntitySet Name="cache_image" EntityType="dkandevModel.cache_image" />
+    <EntitySet Name="cache_libraries" EntityType="dkandevModel.cache_libraries" />
+    <EntitySet Name="cache_menu" EntityType="dkandevModel.cache_menu" />
+    <EntitySet Name="cache_page" EntityType="dkandevModel.cache_page" />
+    <EntitySet Name="cache_path" EntityType="dkandevModel.cache_path" />
+    <EntitySet Name="cache_rules" EntityType="dkandevModel.cache_rules" />
+    <EntitySet Name="cache_token" EntityType="dkandevModel.cache_token" />
+    <EntitySet Name="cache_update" EntityType="dkandevModel.cache_update" />
+    <EntitySet Name="cache_views" EntityType="dkandevModel.cache_views" />
+    <EntitySet Name="cache_views_data" EntityType="dkandevModel.cache_views_data" />
+    <EntitySet Name="contexts" EntityType="dkandevModel.context" />
+    <EntitySet Name="ctools_css_cache" EntityType="dkandevModel.ctools_css_cache" />
+    <EntitySet Name="ctools_object_cache" EntityType="dkandevModel.ctools_object_cache" />
+    <EntitySet Name="data_tables" EntityType="dkandevModel.data_tables" />
+    <EntitySet Name="date_format_locale" EntityType="dkandevModel.date_format_locale" />
+    <EntitySet Name="date_format_type" EntityType="dkandevModel.date_format_type" />
+    <EntitySet Name="date_formats" EntityType="dkandevModel.date_formats" />
+    <EntitySet Name="defaultcontents" EntityType="dkandevModel.defaultcontent" />
+    <EntitySet Name="deltas" EntityType="dkandevModel.delta" />
+    <EntitySet Name="facetapis" EntityType="dkandevModel.facetapi" />
+    <EntitySet Name="feeds_importer" EntityType="dkandevModel.feeds_importer" />
+    <EntitySet Name="feeds_item" EntityType="dkandevModel.feeds_item" />
+    <EntitySet Name="feeds_log" EntityType="dkandevModel.feeds_log" />
+    <EntitySet Name="feeds_push_subscriptions" EntityType="dkandevModel.feeds_push_subscriptions" />
+    <EntitySet Name="feeds_source" EntityType="dkandevModel.feeds_source" />
+    <EntitySet Name="field_config" EntityType="dkandevModel.field_config" />
+    <EntitySet Name="field_config_instance" EntityType="dkandevModel.field_config_instance" />
+    <EntitySet Name="field_data_body" EntityType="dkandevModel.field_data_body" />
+    <EntitySet Name="field_data_field_additional_info" EntityType="dkandevModel.field_data_field_additional_info" />
+    <EntitySet Name="field_data_field_author" EntityType="dkandevModel.field_data_field_author" />
+    <EntitySet Name="field_data_field_data_dictionary" EntityType="dkandevModel.field_data_field_data_dictionary" />
+    <EntitySet Name="field_data_field_dataset_ref" EntityType="dkandevModel.field_data_field_dataset_ref" />
+    <EntitySet Name="field_data_field_format" EntityType="dkandevModel.field_data_field_format" />
+    <EntitySet Name="field_data_field_frequency" EntityType="dkandevModel.field_data_field_frequency" />
+    <EntitySet Name="field_data_field_granularity" EntityType="dkandevModel.field_data_field_granularity" />
+    <EntitySet Name="field_data_field_image" EntityType="dkandevModel.field_data_field_image" />
+    <EntitySet Name="field_data_field_license" EntityType="dkandevModel.field_data_field_license" />
+    <EntitySet Name="field_data_field_link_api" EntityType="dkandevModel.field_data_field_link_api" />
+    <EntitySet Name="field_data_field_link_file" EntityType="dkandevModel.field_data_field_link_file" />
+    <EntitySet Name="field_data_field_resource" EntityType="dkandevModel.field_data_field_resource" />
+    <EntitySet Name="field_data_field_spatial" EntityType="dkandevModel.field_data_field_spatial" />
+    <EntitySet Name="field_data_field_spatial_geographical_cover" EntityType="dkandevModel.field_data_field_spatial_geographical_cover" />
+    <EntitySet Name="field_data_field_tags" EntityType="dkandevModel.field_data_field_tags" />
+    <EntitySet Name="field_data_field_temporal_coverage" EntityType="dkandevModel.field_data_field_temporal_coverage" />
+    <EntitySet Name="field_data_field_upload" EntityType="dkandevModel.field_data_field_upload" />
+    <EntitySet Name="field_data_group_group" EntityType="dkandevModel.field_data_group_group" />
+    <EntitySet Name="field_data_og_group_ref" EntityType="dkandevModel.field_data_og_group_ref" />
+    <EntitySet Name="field_data_og_membership_request" EntityType="dkandevModel.field_data_og_membership_request" />
+    <EntitySet Name="field_data_og_user_node" EntityType="dkandevModel.field_data_og_user_node" />
+    <EntitySet Name="field_group" EntityType="dkandevModel.field_group" />
+    <EntitySet Name="field_revision_body" EntityType="dkandevModel.field_revision_body" />
+    <EntitySet Name="field_revision_field_additional_info" EntityType="dkandevModel.field_revision_field_additional_info" />
+    <EntitySet Name="field_revision_field_author" EntityType="dkandevModel.field_revision_field_author" />
+    <EntitySet Name="field_revision_field_data_dictionary" EntityType="dkandevModel.field_revision_field_data_dictionary" />
+    <EntitySet Name="field_revision_field_dataset_ref" EntityType="dkandevModel.field_revision_field_dataset_ref" />
+    <EntitySet Name="field_revision_field_format" EntityType="dkandevModel.field_revision_field_format" />
+    <EntitySet Name="field_revision_field_frequency" EntityType="dkandevModel.field_revision_field_frequency" />
+    <EntitySet Name="field_revision_field_granularity" EntityType="dkandevModel.field_revision_field_granularity" />
+    <EntitySet Name="field_revision_field_image" EntityType="dkandevModel.field_revision_field_image" />
+    <EntitySet Name="field_revision_field_license" EntityType="dkandevModel.field_revision_field_license" />
+    <EntitySet Name="field_revision_field_link_api" EntityType="dkandevModel.field_revision_field_link_api" />
+    <EntitySet Name="field_revision_field_link_file" EntityType="dkandevModel.field_revision_field_link_file" />
+    <EntitySet Name="field_revision_field_resource" EntityType="dkandevModel.field_revision_field_resource" />
+    <EntitySet Name="field_revision_field_spatial" EntityType="dkandevModel.field_revision_field_spatial" />
+    <EntitySet Name="field_revision_field_spatial_geographical_cover" EntityType="dkandevModel.field_revision_field_spatial_geographical_cover" />
+    <EntitySet Name="field_revision_field_tags" EntityType="dkandevModel.field_revision_field_tags" />
+    <EntitySet Name="field_revision_field_temporal_coverage" EntityType="dkandevModel.field_revision_field_temporal_coverage" />
+    <EntitySet Name="field_revision_field_upload" EntityType="dkandevModel.field_revision_field_upload" />
+    <EntitySet Name="field_revision_group_group" EntityType="dkandevModel.field_revision_group_group" />
+    <EntitySet Name="field_revision_og_group_ref" EntityType="dkandevModel.field_revision_og_group_ref" />
+    <EntitySet Name="field_revision_og_membership_request" EntityType="dkandevModel.field_revision_og_membership_request" />
+    <EntitySet Name="field_revision_og_user_node" EntityType="dkandevModel.field_revision_og_user_node" />
+    <EntitySet Name="file_managed" EntityType="dkandevModel.file_managed" />
+    <EntitySet Name="file_usage" EntityType="dkandevModel.file_usage" />
+    <EntitySet Name="filters" EntityType="dkandevModel.filter" />
+    <EntitySet Name="filter_format" EntityType="dkandevModel.filter_format" />
+    <EntitySet Name="floods" EntityType="dkandevModel.flood" />
+    <EntitySet Name="histories" EntityType="dkandevModel.history" />
+    <EntitySet Name="image_effects" EntityType="dkandevModel.image_effects" />
+    <EntitySet Name="image_styles" EntityType="dkandevModel.image_styles" />
+    <EntitySet Name="job_schedule" EntityType="dkandevModel.job_schedule" />
+    <EntitySet Name="menu_custom" EntityType="dkandevModel.menu_custom" />
+    <EntitySet Name="menu_links" EntityType="dkandevModel.menu_links" />
+    <EntitySet Name="menu_router" EntityType="dkandevModel.menu_router" />
+    <EntitySet Name="multisteps" EntityType="dkandevModel.multistep" />
+    <EntitySet Name="nodes" EntityType="dkandevModel.node" />
+    <EntitySet Name="node_access" EntityType="dkandevModel.node_access" />
+    <EntitySet Name="node_revision" EntityType="dkandevModel.node_revision" />
+    <EntitySet Name="node_type" EntityType="dkandevModel.node_type" />
+    <EntitySet Name="og_membership" EntityType="dkandevModel.og_membership" />
+    <EntitySet Name="og_membership_type" EntityType="dkandevModel.og_membership_type" />
+    <EntitySet Name="og_role" EntityType="dkandevModel.og_role" />
+    <EntitySet Name="og_role_permission" EntityType="dkandevModel.og_role_permission" />
+    <EntitySet Name="og_users_roles" EntityType="dkandevModel.og_users_roles" />
+    <EntitySet Name="queues" EntityType="dkandevModel.queue" />
+    <EntitySet Name="rdf_mapping" EntityType="dkandevModel.rdf_mapping" />
+    <EntitySet Name="rdfx_namespaces" EntityType="dkandevModel.rdfx_namespaces" />
+    <EntitySet Name="rdfx_term_types" EntityType="dkandevModel.rdfx_term_types" />
+    <EntitySet Name="rdfx_terms" EntityType="dkandevModel.rdfx_terms" />
+    <EntitySet Name="rdfx_vocabulary_graphs" EntityType="dkandevModel.rdfx_vocabulary_graphs" />
+    <EntitySet Name="registries" EntityType="dkandevModel.registry" />
+    <EntitySet Name="registry_file" EntityType="dkandevModel.registry_file" />
+    <EntitySet Name="roles" EntityType="dkandevModel.role" />
+    <EntitySet Name="role_permission" EntityType="dkandevModel.role_permission" />
+    <EntitySet Name="rules_config" EntityType="dkandevModel.rules_config" />
+    <EntitySet Name="rules_dependencies" EntityType="dkandevModel.rules_dependencies" />
+    <EntitySet Name="rules_tags" EntityType="dkandevModel.rules_tags" />
+    <EntitySet Name="rules_trigger" EntityType="dkandevModel.rules_trigger" />
+    <EntitySet Name="search_api_db_datasets_author" EntityType="dkandevModel.search_api_db_datasets_author" />
+    <EntitySet Name="search_api_db_datasets_search_api_access_node" EntityType="dkandevModel.search_api_db_datasets_search_api_access_node" />
+    <EntitySet Name="search_api_db_datasets_search_api_language" EntityType="dkandevModel.search_api_db_datasets_search_api_language" />
+    <EntitySet Name="search_api_db_datasets_search_api_viewed" EntityType="dkandevModel.search_api_db_datasets_search_api_viewed" />
+    <EntitySet Name="search_api_db_datasets_status" EntityType="dkandevModel.search_api_db_datasets_status" />
+    <EntitySet Name="search_api_db_datasets_title" EntityType="dkandevModel.search_api_db_datasets_title" />
+    <EntitySet Name="search_api_db_datasets_type" EntityType="dkandevModel.search_api_db_datasets_type" />
+    <EntitySet Name="search_api_index" EntityType="dkandevModel.search_api_index" />
+    <EntitySet Name="search_api_item" EntityType="dkandevModel.search_api_item" />
+    <EntitySet Name="search_api_server" EntityType="dkandevModel.search_api_server" />
+    <EntitySet Name="semaphores" EntityType="dkandevModel.semaphore" />
+    <EntitySet Name="sequences" EntityType="dkandevModel.sequence" />
+    <EntitySet Name="services_endpoint" EntityType="dkandevModel.services_endpoint" />
+    <EntitySet Name="sessions" EntityType="dkandevModel.session" />
+    <EntitySet Name="systems" EntityType="dkandevModel.system" />
+    <EntitySet Name="taxonomy_index" EntityType="dkandevModel.taxonomy_index" />
+    <EntitySet Name="taxonomy_term_data" EntityType="dkandevModel.taxonomy_term_data" />
+    <EntitySet Name="taxonomy_term_hierarchy" EntityType="dkandevModel.taxonomy_term_hierarchy" />
+    <EntitySet Name="taxonomy_vocabulary" EntityType="dkandevModel.taxonomy_vocabulary" />
+    <EntitySet Name="url_alias" EntityType="dkandevModel.url_alias" />
+    <EntitySet Name="users" EntityType="dkandevModel.user" />
+    <EntitySet Name="users_roles" EntityType="dkandevModel.users_roles" />
+    <EntitySet Name="variables" EntityType="dkandevModel.variable" />
+    <EntitySet Name="views_display" EntityType="dkandevModel.views_display" />
+    <EntitySet Name="views_view" EntityType="dkandevModel.views_view" />
+    <EntitySet Name="watchdogs" EntityType="dkandevModel.watchdog" />
+    <AssociationSet Name="nodefield_group" Association="dkandevModel.nodefield_group">
+      <End Role="node" EntitySet="nodes" />
+      <End Role="field_group" EntitySet="field_group" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="action">
+    <Key>
+      <PropertyRef Name="aid" />
+    </Key>
+    <Property Name="aid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="callback" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="parameters" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="label" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="authmap">
+    <Key>
+      <PropertyRef Name="aid" />
+    </Key>
+    <Property Name="aid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="authname" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_authname" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="batch">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="Int32" Nullable="false" />
+    <Property Name="token" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+    <Property Name="batch1" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="block">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="theme" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="region" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="custom" Type="Int16" Nullable="false" />
+    <Property Name="visibility" Type="Int16" Nullable="false" />
+    <Property Name="pages" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="cache" Type="Int16" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_tmd" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="block_custom">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="body" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="info" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_info" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="block_node_type">
+    <Key>
+      <PropertyRef Name="module" />
+      <PropertyRef Name="delta" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="module" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="block_role">
+    <Key>
+      <PropertyRef Name="module" />
+      <PropertyRef Name="delta" />
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="module" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="rid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="blocked_ips">
+    <Key>
+      <PropertyRef Name="iid" />
+    </Key>
+    <Property Name="iid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ip" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="box">
+    <Key>
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="delta" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="plugin_key" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="options" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="bueditor_buttons">
+    <Key>
+      <PropertyRef Name="bid" />
+    </Key>
+    <Property Name="bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="eid" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="content" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="icon" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="accesskey" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="weight" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bueditor_editors">
+    <Key>
+      <PropertyRef Name="eid" />
+    </Key>
+    <Property Name="eid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="pages" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="excludes" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="iconpath" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="librarypath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="spriteon" Type="Int16" Nullable="false" />
+    <Property Name="spritename" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cache">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_admin_menu">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_block">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_bootstrap">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_entity_og_membership">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_entity_og_membership_type">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_field">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_filter">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_form">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_gravatar">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_image">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_libraries">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_menu">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_page">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_path">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_rules">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_token">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_update">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_views">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cache_views_data">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="serialized" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="context">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="tag" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="conditions" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="reactions" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="condition_mode" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ctools_css_cache">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="filename" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="css" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filter" Type="Int16" />
+  </EntityType>
+  <EntityType Name="ctools_object_cache">
+    <Key>
+      <PropertyRef Name="sid" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="obj" />
+    </Key>
+    <Property Name="sid" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="obj" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="updated" Type="Int32" Nullable="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="data_tables">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="table_schema" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="meta" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="date_format_locale">
+    <Key>
+      <PropertyRef Name="type" />
+      <PropertyRef Name="language" />
+    </Key>
+    <Property Name="format" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="date_format_type">
+    <Key>
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="type" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="locked" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="date_formats">
+    <Key>
+      <PropertyRef Name="dfid" />
+    </Key>
+    <Property Name="dfid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="format" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="locked" Type="Int16" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_formats" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="defaultcontent">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="225" Unicode="true" FixedLength="false" />
+    <Property Name="nid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="delta">
+    <Key>
+      <PropertyRef Name="machine_name" />
+    </Key>
+    <Property Name="machine_name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="theme" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="mode" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="parent" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="settings" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="facetapi">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="searcher" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="realm" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="facet" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="enabled" Type="Int16" Nullable="false" />
+    <Property Name="settings" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="feeds_importer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="config" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="feeds_item">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="entity_id" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="feed_nid" Type="Int32" Nullable="false" />
+    <Property Name="imported" Type="Int32" Nullable="false" />
+    <Property Name="url" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="guid" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="hash" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="feeds_log">
+    <Key>
+      <PropertyRef Name="flid" />
+    </Key>
+    <Property Name="flid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="feed_nid" Type="Int32" Nullable="false" />
+    <Property Name="log_time" Type="Int32" Nullable="false" />
+    <Property Name="request_time" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="message" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="variables" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="severity" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="feeds_push_subscriptions">
+    <Key>
+      <PropertyRef Name="domain" />
+      <PropertyRef Name="subscriber_id" />
+    </Key>
+    <Property Name="domain" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="subscriber_id" Type="Int32" Nullable="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+    <Property Name="hub" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="topic" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="secret" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="post_fields" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="feeds_source">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="feed_nid" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="feed_nid" Type="Int32" Nullable="false" />
+    <Property Name="config" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="source" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="state" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="fetcher_result" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="imported" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="field_name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="active" Type="Int16" Nullable="false" />
+    <Property Name="storage_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="storage_module" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="storage_active" Type="Int16" Nullable="false" />
+    <Property Name="locked" Type="Int16" Nullable="false" />
+    <Property Name="data" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="cardinality" Type="Int16" Nullable="false" />
+    <Property Name="translatable" Type="Int16" Nullable="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_config_instance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="field_id" Type="Int32" Nullable="false" />
+    <Property Name="field_name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_body">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="body_value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="body_summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="body_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_additional_info">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_additional_info_first" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_additional_info_second" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_author">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_author_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_author_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_data_dictionary">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_data_dictionary_value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="field_data_dictionary_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_dataset_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_dataset_ref_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_format">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_format_tid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_data_field_frequency">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_frequency_value" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_data_field_granularity">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_granularity_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_granularity_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_image">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_image_fid" Type="Int32" />
+    <Property Name="field_image_alt" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="field_image_title" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="field_image_width" Type="Int32" />
+    <Property Name="field_image_height" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_data_field_license">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_license_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_license_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_link_api">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_link_api_url" Type="String" MaxLength="2048" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_api_title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_api_attributes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_link_file">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_link_file_url" Type="String" MaxLength="2048" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_file_title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_file_attributes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_resource">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_resource_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_spatial">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_spatial_wkt" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="field_spatial_geo_type" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="field_spatial_lat" Type="Single" />
+    <Property Name="field_spatial_lon" Type="Single" />
+    <Property Name="field_spatial_left" Type="Single" />
+    <Property Name="field_spatial_top" Type="Single" />
+    <Property Name="field_spatial_right" Type="Single" />
+    <Property Name="field_spatial_bottom" Type="Single" />
+    <Property Name="field_spatial_srid" Type="Int32" />
+    <Property Name="field_spatial_accuracy" Type="Int32" />
+    <Property Name="field_spatial_source" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_spatial_geographical_cover">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_spatial_geographical_cover_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_spatial_geographical_cover_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_field_tags">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_tags_tid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_data_field_temporal_coverage">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_temporal_coverage_value" Type="DateTime" />
+    <Property Name="field_temporal_coverage_value2" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="field_data_field_upload">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_upload_fid" Type="Int32" />
+    <Property Name="field_upload_service_id" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="field_upload_grid" Type="Int32" />
+    <Property Name="field_upload_graph" Type="Int32" />
+    <Property Name="field_upload_map" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_data_group_group">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="group_group_value" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_data_og_group_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="og_group_ref_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_data_og_membership_request">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="og_membership_request_value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="og_membership_request_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_data_og_user_node">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="og_user_node_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_group">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="identifier" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="group_name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="mode" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="parent_name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_identifier" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="node" Relationship="dkandevModel.nodefield_group" FromRole="field_group" ToRole="node" />
+  </EntityType>
+  <EntityType Name="field_revision_body">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="body_value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="body_summary" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="body_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_additional_info">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_additional_info_first" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_additional_info_second" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_author">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_author_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_author_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_data_dictionary">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_data_dictionary_value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="field_data_dictionary_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_dataset_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_dataset_ref_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_format">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_format_tid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_revision_field_frequency">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_frequency_value" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_revision_field_granularity">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_granularity_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_granularity_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_image">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_image_fid" Type="Int32" />
+    <Property Name="field_image_alt" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="field_image_title" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="field_image_width" Type="Int32" />
+    <Property Name="field_image_height" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_revision_field_license">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_license_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_license_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_link_api">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_link_api_url" Type="String" MaxLength="2048" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_api_title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_api_attributes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_link_file">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_link_file_url" Type="String" MaxLength="2048" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_file_title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_link_file_attributes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_resource">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_resource_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_spatial">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_spatial_wkt" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="field_spatial_geo_type" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="field_spatial_lat" Type="Single" />
+    <Property Name="field_spatial_lon" Type="Single" />
+    <Property Name="field_spatial_left" Type="Single" />
+    <Property Name="field_spatial_top" Type="Single" />
+    <Property Name="field_spatial_right" Type="Single" />
+    <Property Name="field_spatial_bottom" Type="Single" />
+    <Property Name="field_spatial_srid" Type="Int32" />
+    <Property Name="field_spatial_accuracy" Type="Int32" />
+    <Property Name="field_spatial_source" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_spatial_geographical_cover">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_spatial_geographical_cover_value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="field_spatial_geographical_cover_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_field_tags">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_tags_tid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_revision_field_temporal_coverage">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_temporal_coverage_value" Type="DateTime" />
+    <Property Name="field_temporal_coverage_value2" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="field_revision_field_upload">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="field_upload_fid" Type="Int32" />
+    <Property Name="field_upload_service_id" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+    <Property Name="field_upload_grid" Type="Int32" />
+    <Property Name="field_upload_graph" Type="Int32" />
+    <Property Name="field_upload_map" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_revision_group_group">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="group_group_value" Type="Int32" />
+  </EntityType>
+  <EntityType Name="field_revision_og_group_ref">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="og_group_ref_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="field_revision_og_membership_request">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="og_membership_request_value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="og_membership_request_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="field_revision_og_user_node">
+    <Key>
+      <PropertyRef Name="entity_type" />
+      <PropertyRef Name="deleted" />
+      <PropertyRef Name="entity_id" />
+      <PropertyRef Name="revision_id" />
+      <PropertyRef Name="language" />
+      <PropertyRef Name="delta" />
+    </Key>
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="deleted" Type="Int16" Nullable="false" />
+    <Property Name="entity_id" Type="Int32" Nullable="false" />
+    <Property Name="revision_id" Type="Int32" Nullable="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="delta" Type="Int32" Nullable="false" />
+    <Property Name="og_user_node_target_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="file_managed">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="uri" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="filemime" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="filesize" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_uri" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="uuid" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="file_usage">
+    <Key>
+      <PropertyRef Name="fid" />
+      <PropertyRef Name="module" />
+      <PropertyRef Name="type" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="fid" Type="Int32" Nullable="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="filter">
+    <Key>
+      <PropertyRef Name="format" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="format" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="settings" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="filter_format">
+    <Key>
+      <PropertyRef Name="format" />
+    </Key>
+    <Property Name="format" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="cache" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="flood">
+    <Key>
+      <PropertyRef Name="fid" />
+    </Key>
+    <Property Name="fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="event" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="identifier" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+    <Property Name="expiration" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="history">
+    <Key>
+      <PropertyRef Name="uid" />
+      <PropertyRef Name="nid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="nid" Type="Int32" Nullable="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="image_effects">
+    <Key>
+      <PropertyRef Name="ieid" />
+    </Key>
+    <Property Name="ieid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="isid" Type="Int32" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="image_styles">
+    <Key>
+      <PropertyRef Name="isid" />
+    </Key>
+    <Property Name="isid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="job_schedule">
+    <Key>
+      <PropertyRef Name="C__pk" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="last" Type="Int32" Nullable="false" />
+    <Property Name="period" Type="Int32" Nullable="false" />
+    <Property Name="next" Type="Int32" Nullable="false" />
+    <Property Name="periodic" Type="Int16" Nullable="false" />
+    <Property Name="scheduled" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="menu_custom">
+    <Key>
+      <PropertyRef Name="menu_name" />
+    </Key>
+    <Property Name="menu_name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="menu_links">
+    <Key>
+      <PropertyRef Name="mlid" />
+    </Key>
+    <Property Name="menu_name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="mlid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="plid" Type="Int32" Nullable="false" />
+    <Property Name="link_path" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="router_path" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="link_title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="options" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="hidden" Type="Int16" Nullable="false" />
+    <Property Name="external" Type="Int16" Nullable="false" />
+    <Property Name="has_children" Type="Int16" Nullable="false" />
+    <Property Name="expanded" Type="Int16" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="depth" Type="Int16" Nullable="false" />
+    <Property Name="customized" Type="Int16" Nullable="false" />
+    <Property Name="p1" Type="Int32" Nullable="false" />
+    <Property Name="p2" Type="Int32" Nullable="false" />
+    <Property Name="p3" Type="Int32" Nullable="false" />
+    <Property Name="p4" Type="Int32" Nullable="false" />
+    <Property Name="p5" Type="Int32" Nullable="false" />
+    <Property Name="p6" Type="Int32" Nullable="false" />
+    <Property Name="p7" Type="Int32" Nullable="false" />
+    <Property Name="p8" Type="Int32" Nullable="false" />
+    <Property Name="p9" Type="Int32" Nullable="false" />
+    <Property Name="updated" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="menu_router">
+    <Key>
+      <PropertyRef Name="path" />
+    </Key>
+    <Property Name="path" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="load_functions" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="to_arg_functions" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="access_callback" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="access_arguments" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="page_callback" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="page_arguments" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="delivery_callback" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="fit" Type="Int32" Nullable="false" />
+    <Property Name="number_parts" Type="Int16" Nullable="false" />
+    <Property Name="context" Type="Int32" Nullable="false" />
+    <Property Name="tab_parent" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="tab_root" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="title_callback" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="title_arguments" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="theme_callback" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="theme_arguments" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="position" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="include_file" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="multistep">
+    <Key>
+      <PropertyRef Name="nid" />
+      <PropertyRef Name="step" />
+    </Key>
+    <Property Name="nid" Type="Int32" Nullable="false" />
+    <Property Name="step" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="node">
+    <Key>
+      <PropertyRef Name="nid" />
+    </Key>
+    <Property Name="nid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vid" Type="Int32" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="changed" Type="Int32" Nullable="false" />
+    <Property Name="comment" Type="Int32" Nullable="false" />
+    <Property Name="promote" Type="Int32" Nullable="false" />
+    <Property Name="sticky" Type="Int32" Nullable="false" />
+    <Property Name="tnid" Type="Int32" Nullable="false" />
+    <Property Name="translate" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_vid" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="uuid" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="field_group" Relationship="dkandevModel.nodefield_group" FromRole="node" ToRole="field_group" />
+  </EntityType>
+  <EntityType Name="node_access">
+    <Key>
+      <PropertyRef Name="nid" />
+      <PropertyRef Name="gid" />
+      <PropertyRef Name="realm" />
+    </Key>
+    <Property Name="nid" Type="Int32" Nullable="false" />
+    <Property Name="gid" Type="Int32" Nullable="false" />
+    <Property Name="realm" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="grant_view" Type="Int16" Nullable="false" />
+    <Property Name="grant_update" Type="Int16" Nullable="false" />
+    <Property Name="grant_delete" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="node_revision">
+    <Key>
+      <PropertyRef Name="vid" />
+    </Key>
+    <Property Name="nid" Type="Int32" Nullable="false" />
+    <Property Name="vid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="log" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="comment" Type="Int32" Nullable="false" />
+    <Property Name="promote" Type="Int32" Nullable="false" />
+    <Property Name="sticky" Type="Int32" Nullable="false" />
+    <Property Name="vuuid" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="node_type">
+    <Key>
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="base" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="help" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="has_title" Type="Int16" Nullable="false" />
+    <Property Name="title_label" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="custom" Type="Int16" Nullable="false" />
+    <Property Name="modified" Type="Int16" Nullable="false" />
+    <Property Name="locked" Type="Int16" Nullable="false" />
+    <Property Name="disabled" Type="Int16" Nullable="false" />
+    <Property Name="orig_type" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="og_membership">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="etid" Type="Int32" Nullable="false" />
+    <Property Name="entity_type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="gid" Type="Int32" Nullable="false" />
+    <Property Name="group_type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="state" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="field_name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="og_membership_type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="module" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="og_role">
+    <Key>
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="rid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="gid" Type="Int32" Nullable="false" />
+    <Property Name="group_type" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="group_bundle" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="og_role_permission">
+    <Key>
+      <PropertyRef Name="rid" />
+      <PropertyRef Name="permission" />
+    </Key>
+    <Property Name="rid" Type="Int32" Nullable="false" />
+    <Property Name="permission" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="og_users_roles">
+    <Key>
+      <PropertyRef Name="uid" />
+      <PropertyRef Name="rid" />
+      <PropertyRef Name="gid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="rid" Type="Int32" Nullable="false" />
+    <Property Name="gid" Type="Int32" Nullable="false" />
+    <Property Name="group_type" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="queue">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="expire" Type="Int32" Nullable="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rdf_mapping">
+    <Key>
+      <PropertyRef Name="type" />
+      <PropertyRef Name="bundle" />
+    </Key>
+    <Property Name="type" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="bundle" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="mapping" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rdfx_namespaces">
+    <Key>
+      <PropertyRef Name="nsid" />
+    </Key>
+    <Property Name="nsid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="gid" Type="Int32" Nullable="false" />
+    <Property Name="prefix" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="uri" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_gid_uri" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="rdfx_term_types">
+    <Key>
+      <PropertyRef Name="tid" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="tid" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rdfx_terms">
+    <Key>
+      <PropertyRef Name="tid" />
+    </Key>
+    <Property Name="tid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nsid" Type="Int32" Nullable="false" />
+    <Property Name="local_name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_nsid_ln" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="rdfx_vocabulary_graphs">
+    <Key>
+      <PropertyRef Name="gid" />
+    </Key>
+    <Property Name="gid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="main_ns" Type="Int32" Nullable="false" />
+    <Property Name="date_created" Type="Int32" Nullable="false" />
+    <Property Name="date_updated" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="registry">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="9" Unicode="true" FixedLength="false" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="registry_file">
+    <Key>
+      <PropertyRef Name="filename" />
+    </Key>
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="hash" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="rid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="role_permission">
+    <Key>
+      <PropertyRef Name="rid" />
+      <PropertyRef Name="permission" />
+    </Key>
+    <Property Name="rid" Type="Int32" Nullable="false" />
+    <Property Name="permission" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rules_config">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="label" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="plugin" Type="String" Nullable="false" MaxLength="127" Unicode="true" FixedLength="false" />
+    <Property Name="active" Type="Int32" Nullable="false" />
+    <Property Name="weight" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="dirty" Type="Int16" Nullable="false" />
+    <Property Name="module" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="access_exposed" Type="Int16" Nullable="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="rules_dependencies">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="module" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rules_tags">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="tag" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="tag" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rules_trigger">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="event" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="event" Type="String" Nullable="false" MaxLength="127" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_author">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="Int32" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_search_api_access_node">
+    <Key>
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="value" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_search_api_language">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_search_api_viewed">
+    <Key>
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="word" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="word" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="score" Type="Single" Nullable="false" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_status">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="Int16" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_title">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="search_api_db_datasets_type">
+    <Key>
+      <PropertyRef Name="item_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="search_api_index">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="machine_name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="server" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="item_type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="options" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="enabled" Type="Int16" Nullable="false" />
+    <Property Name="read_only" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="module" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_machine_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="search_api_item">
+    <Key>
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="index_id" />
+    </Key>
+    <Property Name="item_id" Type="Int32" Nullable="false" />
+    <Property Name="index_id" Type="Int32" Nullable="false" />
+    <Property Name="changed" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="search_api_server">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="machine_name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="class" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="options" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="enabled" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="module" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_machine_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="semaphore">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="expire" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sequence">
+    <Key>
+      <PropertyRef Name="value" />
+    </Key>
+    <Property Name="value" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="services_endpoint">
+    <Key>
+      <PropertyRef Name="eid" />
+    </Key>
+    <Property Name="eid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="server" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="path" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="authentication" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="server_settings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="resources" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="debug" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="session">
+    <Key>
+      <PropertyRef Name="sid" />
+      <PropertyRef Name="ssid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="sid" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ssid" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="hostname" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+    <Property Name="cache" Type="Int32" Nullable="false" />
+    <Property Name="session1" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="system">
+    <Key>
+      <PropertyRef Name="filename" />
+    </Key>
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="owner" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="bootstrap" Type="Int32" Nullable="false" />
+    <Property Name="schema_version" Type="Int16" Nullable="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="info" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="taxonomy_index">
+    <Key>
+      <PropertyRef Name="C__pk" />
+    </Key>
+    <Property Name="nid" Type="Int32" Nullable="false" />
+    <Property Name="tid" Type="Int32" Nullable="false" />
+    <Property Name="sticky" Type="Int16" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="taxonomy_term_data">
+    <Key>
+      <PropertyRef Name="tid" />
+    </Key>
+    <Property Name="tid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vid" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="uuid" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="taxonomy_term_hierarchy">
+    <Key>
+      <PropertyRef Name="tid" />
+      <PropertyRef Name="parent" />
+    </Key>
+    <Property Name="tid" Type="Int32" Nullable="false" />
+    <Property Name="parent" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="taxonomy_vocabulary">
+    <Key>
+      <PropertyRef Name="vid" />
+    </Key>
+    <Property Name="vid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="machine_name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="hierarchy" Type="Int16" Nullable="false" />
+    <Property Name="module" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="weight" Type="Int32" Nullable="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_machine_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="url_alias">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="source" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="alias" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="uid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="pass" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="mail" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+    <Property Name="theme" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="signature" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="signature_format" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="created" Type="Int32" Nullable="false" />
+    <Property Name="access" Type="Int32" Nullable="false" />
+    <Property Name="login" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="timezone" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="language" Type="String" Nullable="false" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="picture" Type="Int32" Nullable="false" />
+    <Property Name="init" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="uuid" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="users_roles">
+    <Key>
+      <PropertyRef Name="uid" />
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="rid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="variable">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="value" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="views_display">
+    <Key>
+      <PropertyRef Name="vid" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="vid" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="display_title" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="display_plugin" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="position" Type="Int32" />
+    <Property Name="display_options" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="views_view">
+    <Key>
+      <PropertyRef Name="vid" />
+    </Key>
+    <Property Name="vid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="tag" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="base_table" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="human_name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="core" Type="Int32" />
+    <Property Name="C__pk" Type="Guid" />
+    <Property Name="C__unique_name" Type="Binary" MaxLength="16" FixedLength="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="watchdog">
+    <Key>
+      <PropertyRef Name="wid" />
+    </Key>
+    <Property Name="wid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="message" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="variables" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="severity" Type="Int16" Nullable="false" />
+    <Property Name="link" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="location" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="referer" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="hostname" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="timestamp" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="nodefield_group">
+    <End Type="dkandevModel.node" Role="node" Multiplicity="1" />
+    <End Type="dkandevModel.field_group" Role="field_group" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="node">
+        <PropertyRef Name="nid" />
+      </Principal>
+      <Dependent Role="field_group">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
